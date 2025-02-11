@@ -67,7 +67,10 @@
         </div>     
         
         <!-- Start of Projects Section -->
-        <h2 class="text-4xl indent-[1em] font-bold mt-[0.5em]">Projects</h2>
+        <h2 class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
+
+        <div id="project-container" class="flex justify-center flex-col m-[0.5rem]">
+        </div>
 
     </main>
 
@@ -101,17 +104,8 @@
                     })
                 }
 
-                isMobileNavMenuOpen = swapBoolean(isMobileNavMenuOpen);
+                isMobileNavMenuOpen = !isMobileNavMenuOpen;
             })
-
-            function swapBoolean(booleanVar){
-                if(booleanVar){
-                    return false
-                }
-                else{
-                    return true
-                }
-            }
         })
     </script>
 </body>
