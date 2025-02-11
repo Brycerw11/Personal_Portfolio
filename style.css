@@ -1,0 +1,4 @@
+/* Add background color to Header and footer through regular CSS until Tailwind is implemented without the CDN in production version */
+header, footer{
+    background-color: #207EE6;
+}

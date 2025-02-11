@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="author" content="Bryce Wahl"> -->
+    <meta name="description" content="Free Web tutorials">
+
+    <title>Home - Bryce Wahl</title>
+
+    <!-- Add TailwindCSS via CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Link Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div id="main-section" class="flex justify-between">
+            <div id="personal-info-container" class="flex items-center">
+                <img class="w-[60px] h-[60px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
+                <h1 class="text-2xl font-semibold">Bryce Wahl</h1>
+            </div>
+            <nav class="flex justify-center items-center content-center mr-[5px]">
+                <img id="hamburger-menu-icon" class="size-[35px] transition-transform duration-1000" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Hamburger Menu Icon">
+            </nav>
+        </div>
+        <div id="mobile-nav-menu" class="pt-[0.75rem] pb-[1rem] hidden">
+            <ul class="list-none text-center">
+                <li class="p-[0.4em] text-lg m-[0.4rem]">
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">Home</a>
+                </li>
+                <li class="p-[0.4em] text-lg m-[0.4rem]">
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">About</a>
+                </li>
+                <li class="p-[0.4em] text-lg m-[0.4rem]">
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">Projects</a>
+                </li>
+                <li class="p-[0.4em] text-lg m-[0.4rem]">
+                    <a href="#" class="flex content-center items-center justify-center min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]">
+                        <!-- GitHub Logo -->
+                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                        My GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Start of Bio Section -->
+        <div id="personal-image" class="mx-[18%] my-[1.5rem]">
+            <img class="rounded-full border-5" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Image of Bryce Wahl">
+        </div>
+
+        <h1 class="text-center text-6xl font-semibold">Bryce Wahl</h1>
+        <p id="introduction" class="m-[1em] text-[#333333] indent-[1em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
+
+        <div id="tagline" class="m-[0.5rem] py-[1em] text-[#333333]">
+            <hr class="mx-[5%]">
+            <h3 id="tagline-text" class="text-center text-[1.25em] m-[0.2em]">Hire Me!!!</h3>
+            <hr class="mx-[5%]">
+        </div>     
+        
+        <!-- Start of Projects Section -->
+        <h2 class="text-4xl indent-[1em] font-bold mt-[0.5em]">Projects</h2>
+
+    </main>
+
+    <!-- Fill space to allow for scroll while testing -->
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            //if screen width is underneath the "sm" breakpoint in tailwind (if on mobile version of site)
+            if(window.matchMedia("(max-width: 40rem)").matches){
+                //Do things needed for mobile version
+            }
+
+            var isMobileNavMenuOpen = false;
+            $("#hamburger-menu-icon").click(function (){
+                
+                $("#mobile-nav-menu").slideToggle(1000)
+
+                if(isMobileNavMenuOpen){ //if nav menu already open
+                    //swap to being closed
+                    $(this).css({
+                        'transform':'rotate(0deg)'
+                    })
+                }
+                else{
+                    //swap to being open
+                    $(this).css({
+                        'transform':'rotate(90deg)'
+                    })
+                }
+
+                isMobileNavMenuOpen = swapBoolean(isMobileNavMenuOpen);
+            })
+
+            function swapBoolean(booleanVar){
+                if(booleanVar){
+                    return false
+                }
+                else{
+                    return true
+                }
+            }
+        })
+    </script>
+</body>
+</html>
