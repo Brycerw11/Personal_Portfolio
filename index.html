@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <div id="main-section" class="flex justify-between">
+        <div id="header-main" class="flex justify-between">
             <div id="personal-info-container" class="flex items-center">
                 <img class="w-[60px] h-[60px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
                 <h1 class="text-2xl font-semibold">Bryce Wahl</h1>
@@ -31,16 +31,16 @@
         <div id="mobile-nav-menu" class="pt-[0.75rem] pb-[1rem] hidden">
             <ul class="list-none text-center">
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">Home</a>
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#">Home</a>
                 </li>
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">About</a>
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#contact-me-header">About</a>
                 </li>
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]" href="#">Projects</a>
+                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#projects-header">Projects</a>
                 </li>
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a href="#" class="flex content-center items-center justify-center min-h-[30px] px-[1em] py-[0.4em] bg-slate-100 rounded-lg mx-[10%]">
+                    <a href="https://github.com/Brycerw11" class="flex content-center items-center justify-center min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300">
                         <!-- GitHub Logo -->
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         My GitHub
@@ -58,7 +58,7 @@
         </div>
 
         <h1 class="text-center text-6xl font-semibold">Bryce Wahl</h1>
-        <p id="introduction" class="m-[1em] text-[#333333] indent-[1em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
+        <p id="introduction" class="m-[1em] text-[#333333] indent-[2em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
 
         <div id="tagline" class="m-[0.5rem] py-[1em] text-[#333333]">
             <hr class="mx-[5%]">
@@ -67,46 +67,112 @@
         </div>     
         
         <!-- Start of Projects Section -->
-        <h2 class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
+        <h2 id="projects-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
 
-        <div id="project-container" class="flex justify-center flex-col m-[0.5rem]">
+        <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
+            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 1</h3>
+            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
+            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+            <div id="project-image-container" class="flex justify-around items-center content-center">
+                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+            </div>
+
+            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
+                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                    GitHub Repo
+                </a>
+                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    Link to Demo
+                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
+        <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
+            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 2</h3>
+            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
+            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+            <div id="project-image-container" class="flex justify-around items-center content-center">
+                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+            </div>
+
+            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
+                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                    GitHub Repo
+                </a>
+                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    Link to Demo
+                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
+            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 3</h3>
+            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
+            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+            <div id="project-image-container" class="flex justify-around items-center content-center">
+                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+            </div>
+
+            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
+                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                    GitHub Repo
+                </a>
+                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    Link to Demo
+                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Start of Contact Section -->
+        <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Contact Me</h2>
+
+        <div id="social-medias-section" class="flex justify-around flex-wrap m-[0.5rem]">
+            <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <i class="fa-brands fa-github-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <div id="social-text">
+                    <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
+                    <h6 id="social-handle" class="text-[#333333] text-sm">Brycerw11</h6>
+                </div>
+            </a>
+            <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <i class="fa-brands fa-twitter-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <div id="social-text">
+                    <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
+                    <h6 id="social-handle" class="text-[#333333] text-sm">@Brycerw11</h6>
+                </div>
+            </a>
+            <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <div id="social-text">
+                    <h5 id="social-name" class="text-xl font-bold">LinkedIn</h5>
+                    <h6 id="social-handle" class="text-[#333333] text-sm">Bryce Wahl</h6>
+                </div>
+            </a>
+        </div>
+
+        <form action="#" id="email-form" class="border-4 rounded-xl p-[0.6em]">
+            <div id="name-input-container" class="mb-[0.3em]">
+                <label for="">Your Name:</label>
+                <input id="email-name-input" type="text" placeholder="e.g. John Smith" class="border-2 rounded-sm">
+            </div>
+            <div id="email-input-container" class="mb-[0.3em]">
+                <label for="">Your Email:</label>
+                <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[20rem]">
+            </div>
+        </form>
+
+        <!-- Scroll placeholder for testing -->
+        <div><br><br><br><br><br><br><br><br><br><br></div>
 
     </main>
 
-    <!-- Fill space to allow for scroll while testing -->
-    <div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-
-    <script>
-        $(document).ready(function(){
-            //if screen width is underneath the "sm" breakpoint in tailwind (if on mobile version of site)
-            if(window.matchMedia("(max-width: 40rem)").matches){
-                //Do things needed for mobile version
-            }
-
-            var isMobileNavMenuOpen = false;
-            $("#hamburger-menu-icon").click(function (){
-                
-                $("#mobile-nav-menu").slideToggle(1000)
-
-                if(isMobileNavMenuOpen){ //if nav menu already open
-                    //swap to being closed
-                    $(this).css({
-                        'transform':'rotate(0deg)'
-                    })
-                }
-                else{
-                    //swap to being open
-                    $(this).css({
-                        'transform':'rotate(90deg)'
-                    })
-                }
-
-                isMobileNavMenuOpen = !isMobileNavMenuOpen;
-            })
-        })
-    </script>
+    <script src="./scripts/homepageInteractivity.js"></script>
 </body>
 </html>
