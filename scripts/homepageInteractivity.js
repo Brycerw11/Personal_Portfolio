@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //General Code
-    //if screen width is underneath the "sm" breakpoint in tailwind (if on mobile version of site)
+    //if the screen width is less than the "sm" breakpoint in tailwind (if on mobile version of site)
     if(window.matchMedia("(max-width: 40rem)").matches){
         //Do things needed for mobile version
     }

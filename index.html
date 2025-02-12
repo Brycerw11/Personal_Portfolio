@@ -19,16 +19,33 @@
 </head>
 <body>
     <header>
-        <div id="header-main" class="flex justify-between">
+
+        <div id="header-main" class="flex justify-between p-[0.5rem]">
             <div id="personal-info-container" class="flex items-center">
                 <img class="w-[60px] h-[60px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
-                <h1 class="text-2xl font-semibold">Bryce Wahl</h1>
+                <h1 class="text-2xl font-bold">Bryce Wahl</h1>
             </div>
-            <nav class="flex justify-center items-center content-center mr-[5px]">
+
+            <!-- Nav bar when not on mobile -->
+            <div id="regular-nav-bar" class="hidden sm:flex">
+                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#">Home</a>
+                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#contact-me-header">About</a>
+                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#projects-header">Projects</a>
+                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="https://github.com/Brycerw11">
+                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors lg:mr-[0.2em] flex"></i>
+                    <div class="hidden lg:block">My Github</div>
+                </a>
+            </div>
+
+            <!-- Button to toggle nav menu when on mobile -->
+            <nav class="flex sm:hidden justify-center items-center content-center mr-[5px]">
                 <img id="hamburger-menu-icon" class="size-[35px] transition-transform duration-1000" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Hamburger Menu Icon">
             </nav>
         </div>
+
+        <!-- Nav menu when on mobile -->
         <div id="mobile-nav-menu" class="pt-[0.75rem] pb-[1rem] hidden">
+
             <ul class="list-none text-center">
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
                     <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#">Home</a>
@@ -41,24 +58,30 @@
                 </li>
                 <li class="p-[0.4em] text-lg m-[0.4rem]">
                     <a href="https://github.com/Brycerw11" class="flex content-center items-center justify-center min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300">
-                        <!-- GitHub Logo -->
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
-                        My GitHub
+                        My Github
                     </a>
                 </li>
             </ul>
+
         </div>
+
     </header>
 
+    <!-- Start of site's main content -->
     <main>
 
         <!-- Start of Bio Section -->
-        <div id="personal-image" class="mx-[18%] my-[1.5rem]">
-            <img class="rounded-full border-5" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Image of Bryce Wahl">
+        <div id="bio-section" class="sm:flex sm:items-center sm:my-[1.5rem] sm:mx-[7%] lg:mx-[5%]">
+            <div id="personal-image" class="flex justify-center sm:block mx-[18%] my-[1.5rem] sm:mx-0 sm:my-0 sm:w-[32vw] md:w-[30vw] sm:shrink-0">
+                <img class="rounded-full border-5 max-h-[300px] sm:max-h-none" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Image of Bryce Wahl">
+            </div>
+    
+            <div id="bio-text" class="p-[1.5em] pt-0 sm:p-[1em] sm:pt-[1em] md:pl-[1.5em] lg:pl-[2em] sm:shrink">
+                <h1 class="text-center text-6xl font-semibold sm:text-left">Bryce Wahl</h1>
+                <p id="introduction" class="my-[1em] text-[#333333] indent-[2em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
+            </div>
         </div>
-
-        <h1 class="text-center text-6xl font-semibold">Bryce Wahl</h1>
-        <p id="introduction" class="m-[1em] text-[#333333] indent-[2em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
 
         <div id="tagline" class="m-[0.5rem] py-[1em] text-[#333333]">
             <hr class="mx-[5%]">
@@ -173,7 +196,7 @@
             <div id="message-input-container" class="mt-[0.1em] mb-[0.3em]">
                 <label for="message-body-input">Message Body:</label>
                 <br>
-                <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%]" rows="5"></textarea>
+                <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%] min-h-[50px]" rows="5"></textarea>
             </div>
             <div id="email-me-buttons" class="flex justify-between">
                 <button id="reset-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="reset">Reset</button>
@@ -181,22 +204,33 @@
             </div>
         </form>
 
-        <footer class="p-[1.25em] mt-[1.75rem]">
-            <div id="footer-socials" class="flex justify-evenly pb-[1rem]">
-                <a href="#" class="block"> <i class="fa-brands fa-github text-[3em]"> </i></a>
-                <a href="#" class="block"> <i class="fa-brands fa-twitter text-[3em]"></i> </i></a>
-                <a href="#" class="block"> <i class="fa-brands fa-linkedin text-[3em]"></i></a>
-                <a href="#" class="block"> <i class="fa fa-envelope text-[3em]"></i> </i></a>
-            </div>
-            <div id="footer-primary-content" class="flex justify-between items-center content-center">
-                <img class="w-[75px] h-[75px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
-                <p id="copyright-text" class="text-lg">© 2025 Bryce Wahl</p>
-                <a href="#" class="w-[3.75rem] h-[3.75rem] flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300"> <i class="fa fa-arrow-up text-[2.5em]"></i> </a>
-            </div>
-
-        </footer>
-
     </main>
+
+    <footer class="p-[1.25em] pt-[1.4em] mt-[1.75rem]">
+            
+        <div id="footer-socials" class="flex justify-evenly pb-[1rem]">
+            <a href="#" class="block"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
+            <a href="#" class="block"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+            <a href="#" class="block"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
+            <a href="#" class="block"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+        </div>
+        <div id="footer-primary-content" class="flex justify-between items-center content-center">
+            <img class="w-[75px] h-[75px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
+            <p id="copyright-text" class="text-lg font-bold">© 2025 Bryce Wahl</p>
+            <a id="compact-to-top-button" href="#" class="block sm:hidden flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
+                <div class="size-[3.75rem] flex justify-center items-center content-center">
+                    <i id="to-top-icon" class="fa fa-arrow-up text-[2.5em]"></i>
+                </div>
+            </a>
+            <a id="expanded-to-top-button" href="#" class="hidden sm:flex justify-center items-center content-center h-[3.75rem] px-[1em] bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
+                <div class="size-[3.75rem] flex justify-center items-center content-center">
+                    <i id="to-top-icon" class="fa fa-arrow-up text-[2.4em]"></i>
+                </div>
+                <p class="ml-[0] font-bold pr-[1em]">To Top</p>
+            </a>
+        </div>
+
+    </footer>
 
     <script src="./scripts/homepageInteractivity.js"></script>
 </body>
