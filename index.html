@@ -131,7 +131,7 @@
         </div>
 
         <!-- Start of Contact Section -->
-        <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Contact Me</h2>
+        <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.4em] mt-[2.5rem]">Contact Me</h2>
 
         <div id="social-medias-section" class="flex justify-around flex-wrap m-[0.5rem]">
             <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
@@ -157,19 +157,44 @@
             </a>
         </div>
 
-        <form action="#" id="email-form" class="border-4 rounded-xl p-[0.6em]">
+        <div id="email-me-header-container" class="flex justify-between mx-[7%] mt-[1rem] px-[0.5em]">
+            <h3 id="email-me-header-container" class="text-lg font-semibold">Email Me</h3>
+            <a href="mailto:brycewahl07@gmail.com" class="text-[#0078d7] underline">brycewahl07@gmail.com</a>
+        </div>
+        <form action="#" id="email-form" class="border-4 rounded-xl p-[0.6em] mx-[7%]">
             <div id="name-input-container" class="mb-[0.3em]">
                 <label for="">Your Name:</label>
                 <input id="email-name-input" type="text" placeholder="e.g. John Smith" class="border-2 rounded-sm">
             </div>
             <div id="email-input-container" class="mb-[0.3em]">
                 <label for="">Your Email:</label>
-                <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[20rem]">
+                <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[70%]">
+            </div>
+            <div id="message-input-container" class="mt-[0.1em] mb-[0.3em]">
+                <label for="message-body-input">Message Body:</label>
+                <br>
+                <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%]" rows="5"></textarea>
+            </div>
+            <div id="email-me-buttons" class="flex justify-between">
+                <button id="reset-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="reset">Reset</button>
+                <button id="send-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="submit">Send</button>
             </div>
         </form>
 
-        <!-- Scroll placeholder for testing -->
-        <div><br><br><br><br><br><br><br><br><br><br></div>
+        <footer class="p-[1.25em] mt-[1.75rem]">
+            <div id="footer-socials" class="flex justify-evenly pb-[1rem]">
+                <a href="#" class="block"> <i class="fa-brands fa-github text-[3em]"> </i></a>
+                <a href="#" class="block"> <i class="fa-brands fa-twitter text-[3em]"></i> </i></a>
+                <a href="#" class="block"> <i class="fa-brands fa-linkedin text-[3em]"></i></a>
+                <a href="#" class="block"> <i class="fa fa-envelope text-[3em]"></i> </i></a>
+            </div>
+            <div id="footer-primary-content" class="flex justify-between items-center content-center">
+                <img class="w-[75px] h-[75px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
+                <p id="copyright-text" class="text-lg">© 2025 Bryce Wahl</p>
+                <a href="#" class="w-[3.75rem] h-[3.75rem] flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300"> <i class="fa fa-arrow-up text-[2.5em]"></i> </a>
+            </div>
+
+        </footer>
 
     </main>
 
