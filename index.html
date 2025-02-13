@@ -22,8 +22,8 @@
 
         <div id="header-main" class="flex justify-between p-[0.5rem]">
             <div id="personal-info-container" class="flex items-center">
-                <img class="w-[60px] h-[60px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
-                <h1 class="text-2xl font-bold">Bryce Wahl</h1>
+                <img class="w-[60px] h-[60px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
+                <h1 class="text-2xl font-bold ml-[0.5rem]">Bryce Wahl</h1>
             </div>
 
             <!-- Nav bar when not on mobile -->
@@ -92,130 +92,173 @@
         <!-- Start of Projects Section -->
         <h2 id="projects-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
 
-        <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
-            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 1</h3>
-            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
-            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
-            <div id="project-image-container" class="flex justify-around items-center content-center">
-                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+        <div id="projects-container" class="flex mx-[5%] flex-wrap">
+            <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 1</h3>
+                <div id="project-content" class="sm:flex">
+                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools for Mobile version -->
+                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    
+                    <div id="project-image-container" class="sm:w-[60%] ">
+                        <div id="project-images" class="flex justify-around items-center content-center">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                        </div>
+                        <!-- Project Tools for Tablet version -->
+                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    </div>
+                </div>
+                <!-- Project's links to GitHub and Demo-->
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                        GitHub Repo
+                    </a>
+                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        Link to Demo
+                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
 
-            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
-                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
-                    GitHub Repo
-                </a>
-                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    Link to Demo
-                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-        <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
-            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 2</h3>
-            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
-            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
-            <div id="project-image-container" class="flex justify-around items-center content-center">
-                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
-            </div>
-
-            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
-                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
-                    GitHub Repo
-                </a>
-                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    Link to Demo
-                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-        <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem] mx-[5%] rounded-3xl border-4 p-[0.75em]">
-            <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 3</h3>
-            <p id="project-title" class="text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem.</p>
-            <h5 id="project-tools" class="text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
-            <div id="project-image-container" class="flex justify-around items-center content-center">
-                <img class="w-[30vw]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                <img class="w-[30vw]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+            <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 2</h3>
+                <div id="project-content" class="sm:flex">
+                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools for Mobile version -->
+                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    
+                    <div id="project-image-container" class="sm:w-[60%] ">
+                        <div id="project-images" class="flex justify-around items-center content-center">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                        </div>
+                        <!-- Project Tools for Tablet version -->
+                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    </div>
+                </div>
+                <!-- Project's links to GitHub and Demo-->
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                        GitHub Repo
+                    </a>
+                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        Link to Demo
+                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
 
-            <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em]">
-                <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
-                    GitHub Repo
-                </a>
-                <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                    Link to Demo
-                    <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
-                </a>
+            <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 3</h3>
+                <div id="project-content" class="sm:flex">
+                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools for Mobile version -->
+                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    
+                    <div id="project-image-container" class="sm:w-[60%] ">
+                        <div id="project-images" class="flex justify-around items-center content-center">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                        </div>
+                        <!-- Project Tools for Tablet version -->
+                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                    </div>
+                </div>
+                <!-- Project's links to GitHub and Demo-->
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                        GitHub Repo
+                    </a>
+                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        Link to Demo
+                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
+        
         </div>
+
 
         <!-- Start of Contact Section -->
         <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.4em] mt-[2.5rem]">Contact Me</h2>
 
-        <div id="social-medias-section" class="flex justify-around flex-wrap m-[0.5rem]">
-            <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
-                <i class="fa-brands fa-github-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
-                <div id="social-text">
-                    <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
-                    <h6 id="social-handle" class="text-[#333333] text-sm">Brycerw11</h6>
+        <div id="contact-me-section" class="block sm:flex ">
+            
+            <div id="social-medias-section" class="flex justify-around flex-wrap flex-row m-[0.5rem] sm:ml-[2rem] sm:flex-col">
+
+                <h3 id="social-medias-header" class="hidden sm:block text-lg text-center font-semibold">Social Medias</h3>
+                <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-github-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                    <div id="social-text">
+                        <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
+                        <h6 id="social-handle" class="text-[#333333] text-sm">Brycerw11</h6>
+                    </div>
+                </a>
+                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-twitter-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                    <div id="social-text">
+                        <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
+                        <h6 id="social-handle" class="text-[#333333] text-sm">@Brycerw11</h6>
+                    </div>
+                </a>
+                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                    <div id="social-text">
+                        <h5 id="social-name" class="text-xl font-bold">LinkedIn</h5>
+                        <h6 id="social-handle" class="text-[#333333] text-sm">Bryce Wahl</h6>
+                    </div>
+                </a>
+            </div>
+
+            <div id="email-me-section" class="grow mx-[7%] mt-[1rem] sm:mt-0 sm:ml-[1rem] sm:mr-[2rem]">
+                <div id="email-me-header-container" class="flex justify-between  px-[0.5em]">
+                    <h3 id="email-me-header-container" class="text-lg font-semibold">Email Me</h3>
+                    <a href="mailto:brycewahl07@gmail.com" class="text-[#0078d7] underline">brycewahl07@gmail.com</a>
                 </div>
-            </a>
-            <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
-                <i class="fa-brands fa-twitter-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
-                <div id="social-text">
-                    <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
-                    <h6 id="social-handle" class="text-[#333333] text-sm">@Brycerw11</h6>
-                </div>
-            </a>
-            <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
-                <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
-                <div id="social-text">
-                    <h5 id="social-name" class="text-xl font-bold">LinkedIn</h5>
-                    <h6 id="social-handle" class="text-[#333333] text-sm">Bryce Wahl</h6>
-                </div>
-            </a>
+                <form action="#" id="email-form" class="border-4 rounded-xl p-[1em] ">
+                    <div id="name-input-container" class="mb-[0.3em]">
+                        <label for="email-name-input">Your Name:</label>
+                        <input id="email-name-input" type="text" placeholder="e.g. John Smith" class="border-2 rounded-sm">
+                    </div>
+                    <div id="email-input-container" class="mb-[0.3em]">
+                        <label for="email-email-input">Your Email:</label>
+                        <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[70%]">
+                    </div>
+                    <div id="subject-input-container" class="mt-[0.8em] mb-[0.1em]">
+                        <label for="email-subject-input">Subject:</label>
+                        <input id="email-subject-input" type="email" placeholder="e.g. Question regarding your 'Portfolio' project" class="border-2 rounded-sm w-[60%] active:border-[#0078d7]">
+                    </div>
+                    <div id="message-input-container" class="mb-[0.3em]">
+                        <label for="message-body-input">Message Body:</label>
+                        <br>
+                        <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%] min-h-[50px]" rows="5"></textarea>
+                    </div>
+                    <div id="email-me-buttons" class="flex justify-between">
+                        <button id="reset-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="reset">Reset</button>
+                        <button id="send-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div id="email-me-header-container" class="flex justify-between mx-[7%] mt-[1rem] px-[0.5em]">
-            <h3 id="email-me-header-container" class="text-lg font-semibold">Email Me</h3>
-            <a href="mailto:brycewahl07@gmail.com" class="text-[#0078d7] underline">brycewahl07@gmail.com</a>
-        </div>
-        <form action="#" id="email-form" class="border-4 rounded-xl p-[0.6em] mx-[7%]">
-            <div id="name-input-container" class="mb-[0.3em]">
-                <label for="">Your Name:</label>
-                <input id="email-name-input" type="text" placeholder="e.g. John Smith" class="border-2 rounded-sm">
-            </div>
-            <div id="email-input-container" class="mb-[0.3em]">
-                <label for="">Your Email:</label>
-                <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[70%]">
-            </div>
-            <div id="message-input-container" class="mt-[0.1em] mb-[0.3em]">
-                <label for="message-body-input">Message Body:</label>
-                <br>
-                <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%] min-h-[50px]" rows="5"></textarea>
-            </div>
-            <div id="email-me-buttons" class="flex justify-between">
-                <button id="reset-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="reset">Reset</button>
-                <button id="send-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="submit">Send</button>
-            </div>
-        </form>
+
 
     </main>
 
     <footer class="p-[1.25em] pt-[1.4em] mt-[1.75rem]">
             
         <div id="footer-socials" class="flex justify-evenly pb-[1rem]">
-            <a href="#" class="block"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
-            <a href="#" class="block"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
-            <a href="#" class="block"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
-            <a href="#" class="block"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
+            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
+            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
         </div>
         <div id="footer-primary-content" class="flex justify-between items-center content-center">
-            <img class="w-[75px] h-[75px] p-[8px]" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Bryce Wahl's logo">
+            <img class="w-[75px] h-[75px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
             <p id="copyright-text" class="text-lg font-bold">© 2025 Bryce Wahl</p>
             <a id="compact-to-top-button" href="#" class="block sm:hidden flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
                 <div class="size-[3.75rem] flex justify-center items-center content-center">

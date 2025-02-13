@@ -23,6 +23,12 @@ My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery.
 - Contact Page
 
 
+## Acknowledgements
+
+- [Font Awesome v4](https://fontawesome.com/v4)
+- [Tailwind CSS v4.0](https://tailwindcss.com/)
+- [jQuery v3.7.1](https://releases.jquery.com/)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
