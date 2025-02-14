@@ -39,7 +39,7 @@
 
             <!-- Button to toggle nav menu when on mobile -->
             <nav class="flex sm:hidden justify-center items-center content-center mr-[5px]">
-                <img id="hamburger-menu-icon" class="size-[35px] transition-transform duration-1000" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Hamburger Menu Icon">
+                <img id="hamburger-menu-icon" class="size-[35px] transition-transform duration-1000" src="./images/ui/HamburgerMenuIcon.svg" alt="Hamburger Menu Icon">
             </nav>
         </div>
 
@@ -93,24 +93,30 @@
         <h2 id="projects-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
 
         <div id="projects-container" class="flex mx-[5%] flex-wrap">
-            <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+
+            <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
                 <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 1</h3>
-                <div id="project-content" class="sm:flex">
-                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
-                    <!-- Project Tools for Mobile version -->
-                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                
+                <div id="project-content" class="sm:flex lg:items-center">
+                    <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] ">
+                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
                     </div>
                 </div>
+                <!-- Project description on desktop layout -->
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
                     <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
@@ -122,24 +128,29 @@
                 </div>
             </div>
 
-            <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+            <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
                 <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 2</h3>
-                <div id="project-content" class="sm:flex">
-                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
-                    <!-- Project Tools for Mobile version -->
-                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                
+                <div id="project-content" class="sm:flex lg:items-center">
+                    <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] ">
+                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
                     </div>
                 </div>
+                <!-- Project description on desktop layout -->
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
                     <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
@@ -151,24 +162,29 @@
                 </div>
             </div>
 
-            <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem]  rounded-3xl border-4 p-[0.75em]">  
+            <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
                 <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 3</h3>
-                <div id="project-content" class="sm:flex">
-                    <p id="project-description" class="sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
-                    <!-- Project Tools for Mobile version -->
-                    <h5 id="project-tools" class="sm:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                
+                <div id="project-content" class="sm:flex lg:items-center">
+                    <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] ">
+                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools" class="hidden sm:block text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
                     </div>
                 </div>
+                <!-- Project description on desktop layout -->
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em]">
+                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
                     <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
@@ -177,6 +193,37 @@
                         Link to Demo
                         <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
                     </a>
+                </div>
+            </div>
+
+            
+            <!-- Miscellaneous Works Section to fill empty space on desktop layout -->
+            <div id="misc-projects" class="project-container hidden lg:block w-[48%] m-[0.5rem] rounded-3xl border-4 p-[0.75em]">  
+                <h3 id="misc-projects-header" class="text-[1.6875rem] font-bold">Miscellaneous Projects</h3>
+                <h4 id="misc-projects-header" class="text-[1.2875rem] font-bold">Project Title</h4>
+                
+                <div class="project-content">
+                    <div id="misc-projects-project-selection" class="flex justify-between p-[1em] items-center">
+                        <i class="fa fa-arrow-circle-left text-5xl"></i>
+                        <div id="misc-project-image-container" class="mx-[2.5em]">
+                            <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Placeholder Project Image">
+                            <img id="misc-project-image-animation" class="hidden" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Placeholder Project Image">
+                        </div>
+                        <i class="fa fa-arrow-circle-right text-5xl"></i>
+                    </div>
+
+                    <p id="misc-project-desc" class="indent-[2em] text-[#333333]">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, facilis dolore sunt maiores beatae sed error dignissimos, reprehenderit quos maxime excepturi optio quod qui nisi dicta ea ut perspiciatis exercitationem?
+                    </p>
+                </div>
+
+                <!-- Project's links to GitHub and Demo-->
+                <div id="misc-project-links" class="flex justify-between items-center overflow-x-auto text-[0.9em] text-[1.1em] mt-[0.5rem]">
+                    <a id="misc-project-github-link" href="https://github.com/Brycerw11" class="flex flex-shrink-0 items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                        GitHub Repo
+                    </a>
+                    <p id="misc-project-tools" class="ml-[0.5rem] text-right text-[0.9em]">Tools: Unity 6.0, C#, and Visual Studio</p>
                 </div>
             </div>
         
@@ -260,6 +307,7 @@
         <div id="footer-primary-content" class="flex justify-between items-center content-center">
             <img class="w-[75px] h-[75px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
             <p id="copyright-text" class="text-lg font-bold">© 2025 Bryce Wahl</p>
+            <!-- Create "to top" button, compact for the mobile layout and expanded for the tablet and desktop layouts -->
             <a id="compact-to-top-button" href="#" class="block sm:hidden flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
                 <div class="size-[3.75rem] flex justify-center items-center content-center">
                     <i id="to-top-icon" class="fa fa-arrow-up text-[2.5em]"></i>
