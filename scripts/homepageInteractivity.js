@@ -28,30 +28,31 @@ $(document).ready(function(){
     })
 
 
-    //Desktop Project Image Galleries
-    $(".project-gallery-button").click(function (){
-        var projectNum = $(this).attr("projectnum")
-        var animationDirection = $(this).attr("gallerydirection");
+    //Miscellaneous Works Section functionality
+    var targetProjectIndex = 0;
+    const projectNames = [] //Array of valid projects, by name, in the "projects" object
+    const projects = {
+        "WinFormsFinanceApp": {
+            image: "",
+            description: "A personal finance fpplication written using Windows Forms for the .NET Framework in Visual Studio 2022.",
+            gitHubURL: "",
+            tools: ".NET Windows Forms and Visual Studio 2022",
+        },
+    }
 
-        if (animationDirection == 'left'){
-            $("#project-gallery-container").animate({
-                "padding-left": -1 * $("#project-gallery-image").width()
-            }, 1000)
-        }
-        else if (animationDirection == 'right'){
-            var newSrc
-
-            $("#project-gallery-image-animation").attr("src") = $("#project-gallery-image").attr("src")
-            $("#project-gallery-container").css("padding-left", -1*$("#project-gallery-image").width())
-            $("#project-gallery-image").attr("src") = 
-
-            $("#project-gallery-container").animate({
-                "padding-left": -1 * $("#project-gallery-image").width()
-            }, 1000)
-        }
+    $(".misc-works-button").on('click', function(){
+        var direction = $(this).attr("direction");
         
+        if (direction == "left"){
+            targetProjectIndex -= 1;
+            if(targetProjectIndex < 0){
+                targetProjectIndex = projectNames.length -1
+            }
+        }
+        var targetProject = projectNames[targetProjectIndex];
+        
+        console.log(targetProject)
     })
-
 
     //To Top Button's Smooth Scroll
     function scrollToTop(){
