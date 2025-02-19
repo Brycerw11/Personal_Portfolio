@@ -24,6 +24,8 @@ My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery.
 
 - Contact Page
 
+## Wireframes
+- [Homepage Wireframe](https://lucid.app/lucidchart/56c2a135-cb58-4132-859e-d3ec90ce0ae5/edit?invitationId=inv_6985dd5b-1810-4353-9c6b-981c7d9e8c69)
 
 ## Acknowledgements
 
