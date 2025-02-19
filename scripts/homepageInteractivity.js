@@ -33,7 +33,7 @@ $(document).ready(function(){
     const projectNames = ["WinForms Finance App", "Java Significant Figure Counter"] //Array of valid projects, by name, in the "projects" object
     const projects = { //object containing each project as an object
         "WinForms Finance App": {
-            image: "",
+            image: "./images/project_images/WinFormsFinanceApp.png",
             description: "Personal Finance Application written using Windows Forms with the .NET Framework. Developed for the FBLA Coding and Programming Event's 2024-2025 prompt.",
             gitHubURL: "https://github.com/Brycerw11/WinFormsFinanceApp",
             tools: ".NET Windows Forms and Visual Studio 2022",
@@ -51,6 +51,7 @@ $(document).ready(function(){
     $("#misc-project-desc").html(projects[projectNames[0]].description)
     $("#misc-project-tools").html(projects[projectNames[0]].tools)
     $("#misc-project-github-link").attr('href', projects[projectNames[0]].gitHubURL)
+    $("#misc-project-image").attr("src", projects[projectNames[0]].image)
 
     function TextAnimation(selector, newText, duration = 1000, step = 1){
 
@@ -82,8 +83,13 @@ $(document).ready(function(){
             }, (duration/2)/ (originalLength / step) )
 
         }, duration/2)
+
+        setTimeout(function(){ //ensure the new text is fully displayed at the end of transition duration
+            $(selector).html( newText )
+        }, duration+100)
     }
 
+    // Change misc work when one of the buttons is clicked
     $(".misc-works-button").on('click', function(){
         var direction = $(this).attr("direction");
         
@@ -104,17 +110,21 @@ $(document).ready(function(){
         //Change to new project
         var targetProject = projects[projectNames[targetProjectIndex]];
         
+        // Change Text
         TextAnimation("#misc-works-project-header", projectNames[targetProjectIndex])
         TextAnimation("#misc-project-desc", targetProject.description)
         TextAnimation("#misc-project-tools", targetProject.tools)
+        // Change Links
         $("#misc-project-github-link").attr('href', targetProject.gitHubURL)
 
+        // Find new url for the image
         var imageUrl = targetProject.image;
 
-        if(targetProject.image == ""){
+        if(targetProject.image == ""){ //replace image with a placeholder if an image is not specified
             imageUrl = "./images/placeholders/NoImageAvailablePlaceholder.jpg"
         }
 
+        // Change image
         $("#misc-project-image").animate({opacity: "1%"}, 500) //fade image out
         setTimeout(function(){ //wait until faded out then switch image and fade in
             $("#misc-project-image").attr("src", imageUrl).animate({opacity: "100%"}, 500)

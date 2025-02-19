@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="author" content="Bryce Wahl"> -->
-    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Bryce Wahl">
+    <meta name="description" content="I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS.">
 
     <title>Home - Bryce Wahl</title>
 
@@ -19,7 +19,6 @@
 </head>
 <body>
     <header>
-
         <div id="header-main" class="flex justify-between p-[0.5rem]">
             <div id="personal-info-container" class="flex items-center">
                 <img class="w-[60px] h-[60px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
@@ -65,16 +64,16 @@
             </ul>
 
         </div>
-
     </header>
 
-    <!-- Start of site's main content -->
+
+    <!-- Start of site's main content (not header/footer) -->
     <main>
 
         <!-- Start of Bio Section -->
         <div id="bio-section" class="sm:flex sm:items-center sm:my-[1.5rem] sm:mx-[7%] lg:mx-[5%]">
             <div id="personal-image" class="flex justify-center sm:block mx-[18%] my-[1.5rem] sm:mx-0 sm:my-0 sm:w-[32vw] md:w-[30vw] lg:w-[25vw] sm:shrink-0">
-                <img class="rounded-full border-5 max-h-[300px] sm:max-h-none" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Image of Bryce Wahl">
+                <img class="rounded-full border-5 max-h-[300px] sm:max-h-none" src="./images/branding/BryceWahlPicture.jpg" alt="Image of Bryce Wahl">
             </div>
     
             <div id="bio-text" class="p-[1.5em] pt-0 sm:p-[1em] sm:pt-[1em] md:pl-[1.5em] lg:pl-[2em] sm:shrink">
@@ -83,6 +82,7 @@
             </div>
         </div>
 
+        <!-- Tagline section -->
         <div id="tagline" class="m-[0.5rem] py-[1em] text-[#333333]">
             <hr class="mx-[5%]">
             <h3 id="tagline-text" class="text-center text-[1.25em] m-[0.2em]">Hire Me!!!</h3>
@@ -94,102 +94,130 @@
 
         <div id="projects-container" class="flex mx-[5%] flex-wrap">
 
+            <!-- Project 1 Section -->
             <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 1</h3>
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Personal Portfolio</h3>
                 
                 <div id="project-content" class="sm:flex lg:items-center">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                        My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
+                    </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                        Tools: HTML, Tailwind CSS, and JS with jQuery
+                    </h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
+                    <div id="project-image-container" class="sm:w-[60%] lg:w-[75%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[35%] lg:w-[38%] border-2" src="./images/project_images/PersonalPortfolioMobileSite.png" alt="Screenshot of mobile version of the project">
+                            <img class="w-[30vw] sm:w-[45%] lg:w-[51%] border-2" src="./images/project_images/PersonalPortfolioDesktopSite.png" alt="Screenshot of desktop version of the project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                            Tools: HTML, Tailwind CSS, and JS with jQuery
+                        </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
+                </p>
                 
                 <!-- Project's links to GitHub and Demo-->
                 <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://github.com/Brycerw11/Personal_Portfolio" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
                     </a>
-                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/Personal_Portfolio/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         Link to Demo
                         <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
 
+
+            <!-- Project 2 Section -->
             <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 2</h3>
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Community Center Website</h3>
                 
                 <div id="project-content" class="sm:flex lg:items-center">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                        A website for a fictional community center at the West-MEC Northeast Campus. Designed for the FBLA Website Design Event's 2024-2025 Prompt.
+                    </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                        Tools: HTML, CSS, and JS
+                    </h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
+                    <div id="project-image-container" class="sm:w-[60%] lg:w-[75%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[45%] lg:w-[48%] border-2" src="./images/project_images/CommunityCenterDesktopScreenshot.png" alt="Screenshot of desktop version of the project">
+                            <img class="w-[30vw] sm:w-[38%] lg:w-[43%] border-2" src="./images/project_images/CommunityCenterMobileScreenshot.jpg" alt="Screenshot of the mobile version of the project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                            Tools: HTML, CSS, and JS
+                        </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    A website for a fictional community center at the West-MEC Northeast Campus. Designed for the FBLA Website Design Event's 2024-2025 Prompt.
+                </p>
                 
                 <!-- Project's links to GitHub and Demo-->
                 <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://github.com/Brycerw11/community_center_website" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
                     </a>
-                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/community_center_website/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         Link to Demo
                         <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
 
+
+            <!-- Project 3 Section -->
             <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Project 3</h3>
+                <h3 id="project-name" class="text-[1.6875rem] font-bold">Picture Grid Website</h3>
                 
                 <div id="project-content" class="sm:flex lg:items-center">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                        A website made entirely of pictures, using CSS grids for the layout.
+                    </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">Tools: HTML, CSS, and JS</h5>
+                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                        Tools: HTML and CSS
+                    </h5>
                     
                     <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
                         <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Screenshot of project">
-                            <img class="w-[30vw] sm:w-[42%] lg:w-[45%]" src="https://www.flintskallen.com/test_images/16:9_placeholder.png" alt="Screenshot of project">
+                            <img class="w-[30vw] sm:w-[85%] lg:w-[95%] border-2" src="./images/project_images/PictureGridWebsiteScreenshot.png" alt="Screenshot of project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">Tools: HTML, CSS, and JS</h5>
+                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                            Tools: HTML and CSS
+                        </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, mollitia ullam. Saepe eveniet nulla eum ducimus voluptate ut laborum minus voluptatibus quae. Aperiam eligendi eaque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore non repellat similique dolore debitis voluptatibus fuga voluptate neque quasi.</p>
+                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    A website made entirely of pictures, using CSS grids for the layout.
+                </p>
                 
                 <!-- Project's links to GitHub and Demo-->
                 <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://github.com/Brycerw11/Picture_Grid_Project" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
                         GitHub Repo
                     </a>
-                    <a href="#personal-image" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/Picture_Grid_Project/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
                         Link to Demo
                         <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
                     </a>
@@ -209,7 +237,7 @@
                         <div id="misc-projects-project-selection" class="flex justify-between p-[1em] items-center">
                             <i id="misc-works-left" direction="left" class="misc-works-button fa fa-arrow-circle-left text-5xl"></i>
                             <div id="misc-project-image-container" class="mx-[3em] overflow-hidden">
-                                <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Placeholder Project Image">
+                                <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Screenshot of the project">
                             </div>
                             <i id="misc-works-right" direction="right" class="misc-works-button fa fa-arrow-circle-right text-5xl"></i>
                         </div>
@@ -235,29 +263,30 @@
         </div>
 
 
-        <!-- Start of Contact Section -->
+        <!-- Start of Contact Me Section -->
         <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.4em] mt-[2.5rem]">Contact Me</h2>
 
         <div id="contact-me-section" class="block sm:flex ">
             
-            <div id="social-medias-section" class="flex justify-around flex-wrap flex-row m-[0.5rem] sm:ml-[2rem] sm:flex-col">
+            <div id="social-medias-section" class="flex justify-around flex-wrap flex-row m-[0.5rem] sm:ml-[2rem] sm:flex-col lg:grow-1">
 
-                <h3 id="social-medias-header" class="hidden sm:block text-lg text-center font-semibold">Social Medias</h3>
-                <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <!-- Links to My Social Medias -->
+                <h3 id="social-medias-header" class="hidden sm:block text-lg text-center font-semibold lg:text-left">Social Medias</h3>
+                <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center w-fit rounded-xl px-[0.9em] py-[0.55em] hover:bg-slate-200 transition-colors duration-300">
                     <i class="fa-brands fa-github-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
                         <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
                         <h6 id="social-handle" class="text-[#333333] text-sm">Brycerw11</h6>
                     </div>
                 </a>
-                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] w-fit rounded-xl hover:bg-slate-200 transition-colors duration-300">
                     <i class="fa-brands fa-twitter-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
                         <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
                         <h6 id="social-handle" class="text-[#333333] text-sm">@Brycerw11</h6>
                     </div>
                 </a>
-                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] rounded-xl hover:bg-slate-200 transition-colors duration-300">
+                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] w-fit rounded-xl hover:bg-slate-200 transition-colors duration-300">
                     <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
                         <h5 id="social-name" class="text-xl font-bold">LinkedIn</h5>
@@ -266,7 +295,8 @@
                 </a>
             </div>
 
-            <div id="email-me-section" class="grow mx-[7%] mt-[1rem] sm:mt-0 sm:ml-[1rem] sm:mr-[2rem]">
+            <!-- Form to email me -->
+            <div id="email-me-section" class="grow lg:grow-7 mx-[7%] mt-[1rem] sm:mt-0 sm:ml-[1rem] sm:mr-[2rem]">
                 <div id="email-me-header-container" class="flex justify-between  px-[0.5em]">
                     <h3 id="email-me-header-container" class="text-lg font-semibold">Email Me</h3>
                     <a href="mailto:brycewahl07@gmail.com" class="text-[#0078d7] underline">brycewahl07@gmail.com</a>
@@ -297,12 +327,12 @@
             </div>
         </div>
 
-
-
     </main>
 
+    <!-- Site Footer -->
     <footer class="p-[1.25em] pt-[1.4em] mt-[1.75rem]">
-            
+        
+        <!-- Social Media links for non-desktop layouts -->
         <div id="footer-socials" class="flex justify-evenly pb-[1rem] lg:hidden">
             <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
             <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
@@ -312,7 +342,7 @@
         <div id="footer-primary-content" class="flex justify-between items-center content-center">
             <img class="w-[75px] h-[75px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
             
-            <!-- Footer Socials on Desktop -->
+            <!-- Footer Socials on Desktop: condenses two line footer to one line -->
             <div id="footer-socials" class="hidden lg:flex flex-row justify-center items-center content-center">
                 <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
                 <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
