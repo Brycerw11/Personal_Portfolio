@@ -34,12 +34,11 @@ $(document).ready(function(){
     const projects = { //object containing each project as an object
         "WinForms Finance App": {
             image: "",
-            description: "A personal finance application written using Windows Forms for the .NET Framework in Visual Studio 2022.",
+            description: "Personal Finance Application written using Windows Forms with the .NET Framework. Developed for the FBLA Coding and Programming Event's 2024-2025 prompt.",
             gitHubURL: "https://github.com/Brycerw11/WinFormsFinanceApp",
             tools: ".NET Windows Forms and Visual Studio 2022",
         },
         "Java Significant Figure Counter": {
-            // image: "./images/project_images/JavaSigFidProgramScreenshot.png",
             image: "./images/project_images/JavaSigFigProgramScreenshot.png",
             description: "A small Java program that asks for a number and respondes with the number of significant figures that number has.",
             gitHubURL: "https://github.com/Brycerw11/java_significant_figure_counter",

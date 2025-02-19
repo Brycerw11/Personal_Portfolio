@@ -198,32 +198,38 @@
 
             
             <!-- Miscellaneous Works Section to fill empty space on desktop layout -->
-            <div id="misc-projects" class="project-container hidden lg:flex flex-col w-[48%] m-[0.5rem] rounded-3xl border-4 p-[0.75em]">  
+            <div id="misc-projects" class="project-container hidden lg:flex flex-col w-[48%] m-[0.5rem] rounded-3xl border-4 p-[0.75em]">
                 <h3 id="misc-works-header" class="text-[1.6875rem] font-bold flex-shrink-0">Miscellaneous Projects</h3>
-                <h4 id="misc-works-project-header" class="text-[1.2875rem] font-bold">Project Title</h4>
                 
-                <div class="project-content">
-                    <div id="misc-projects-project-selection" class="flex justify-between p-[1em] items-center">
-                        <i id="misc-works-left" direction="left" class="misc-works-button fa fa-arrow-circle-left text-5xl"></i>
-                        <div id="misc-project-image-container" class="mx-[3em] overflow-hidden">
-                            <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Placeholder Project Image">
+                <div id="misc-project-container" class="my-auto"> <!-- Allows the content of the misc project section to be centered vertically when the misc project section itself is too big-->
+
+                    <h4 id="misc-works-project-header" class="text-[1.2875rem] font-bold">Project Title</h4>
+                    
+                    <div class="project-content">
+                        <div id="misc-projects-project-selection" class="flex justify-between p-[1em] items-center">
+                            <i id="misc-works-left" direction="left" class="misc-works-button fa fa-arrow-circle-left text-5xl"></i>
+                            <div id="misc-project-image-container" class="mx-[3em] overflow-hidden">
+                                <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Placeholder Project Image">
+                            </div>
+                            <i id="misc-works-right" direction="right" class="misc-works-button fa fa-arrow-circle-right text-5xl"></i>
                         </div>
-                        <i id="misc-works-right" direction="right" class="misc-works-button fa fa-arrow-circle-right text-5xl"></i>
+    
+                        <p id="misc-project-desc" class="indent-[2em] text-[#333333]">
+                            <!-- Placeholder text that the JS will replace -->
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, facilis dolore sunt maiores beatae sed error dignissimos, reprehenderit quos maxime excepturi optio quod qui nisi dicta ea ut perspiciatis exercitationem?
+                        </p>
+                    </div>
+    
+                    <!-- Project's links to GitHub and Demo-->
+                    <div id="misc-project-links" class="flex justify-between items-center overflow-x-auto text-[0.9em] text-[1.1em] mt-[0.75rem] flex-shrink-0">
+                        <a id="misc-project-github-link" href="https://github.com/Brycerw11" class="flex flex-shrink-0 items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                            <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                            GitHub Repo
+                        </a>
+                        <p id="misc-project-tools" class="ml-[0.5rem] text-right text-[0.9em]">Tools: Unity 6.0, C#, and Visual Studio</p>
                     </div>
 
-                    <p id="misc-project-desc" class="indent-[2em] text-[#333333]">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, facilis dolore sunt maiores beatae sed error dignissimos, reprehenderit quos maxime excepturi optio quod qui nisi dicta ea ut perspiciatis exercitationem?
-                    </p>
-                </div>
-
-                <!-- Project's links to GitHub and Demo-->
-                <div id="misc-project-links" class="flex justify-between items-center overflow-x-auto text-[0.9em] text-[1.1em] mt-[0.5rem] flex-shrink-0">
-                    <a id="misc-project-github-link" href="https://github.com/Brycerw11" class="flex flex-shrink-0 items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
-                        GitHub Repo
-                    </a>
-                    <p id="misc-project-tools" class="ml-[0.5rem] text-right text-[0.9em]">Tools: Unity 6.0, C#, and Visual Studio</p>
-                </div>
+                </div> <!-- End of project's container -->
             </div>
         
         </div>
@@ -297,7 +303,7 @@
 
     <footer class="p-[1.25em] pt-[1.4em] mt-[1.75rem]">
             
-        <div id="footer-socials" class="flex justify-evenly pb-[1rem]">
+        <div id="footer-socials" class="flex justify-evenly pb-[1rem] lg:hidden">
             <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
             <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
             <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
@@ -305,7 +311,17 @@
         </div>
         <div id="footer-primary-content" class="flex justify-between items-center content-center">
             <img class="w-[75px] h-[75px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
+            
+            <!-- Footer Socials on Desktop -->
+            <div id="footer-socials" class="hidden lg:flex flex-row justify-center items-center content-center">
+                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
+                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
+                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+            </div>
+
             <p id="copyright-text" class="text-lg font-bold">© 2025 Bryce Wahl</p>
+            
             <!-- Create "to top" button, compact for the mobile layout and expanded for the tablet and desktop layouts -->
             <a id="compact-to-top-button" href="#" class="block sm:hidden flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
                 <div class="size-[3.75rem] flex justify-center items-center content-center">
