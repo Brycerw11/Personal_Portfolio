@@ -1,0 +1,29 @@
+header {
+  background-color: #207EE6;
+}
+header #header-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+header #personal-info-container {
+  display: flex;
+  align-items: center;
+}
+header #personal-info-container img {
+  width: 60px;
+  height: 60px;
+}
+header #personal-info-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+header #regular-nav-bar {
+  display: hidden;
+}
+@media (min-width: 40rem) {
+  header #regular-nav-bar {
+    display: flex;
+  }
+}/*# sourceMappingURL=index.css.map */
