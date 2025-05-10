@@ -1,5 +1,20 @@
 // Uses tailwind's breakpoints for responsive design
 $sm-breakpoint: 40rem;
+$md-breakpoint: 48rem;
+$lg-breakpoint: 64rem;
+$xl-breakpoint: 80rem;
+
+// Tailwind Font Sizes
+$text-lg: 1.125rem;
+
+// Use tailwind's radius presets
+$radius-lg: 0.5rem;
+
+// Use tailwind's colors
+$slate-100: oklch(96.8% 0.007 247.896);
+$slate-300: oklch(86.9% 0.022 252.894);
+$gray-100: oklch(96.7% 0.003 264.542);
+$gray-900: oklch(21% 0.034 264.665);
 
 header{
     background-color: #207EE6;
@@ -8,28 +23,112 @@ header{
         display: flex;
         justify-content: space-between;
         padding: 0.5rem;
-    }
 
-    #personal-info-container{
-        display: flex;
-        align-items: center;
-
-        img{
-            width: 60px;
-            height: 60px;
-        }
-
-        h1{
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-left: 0.5rem;
-        }
-    }
-
-    #regular-nav-bar{
-        display: hidden;
-        @media (min-width: $sm-breakpoint) {
+        #personal-info-container{
             display: flex;
+            align-items: center;
+    
+            img{
+                width: 60px;
+                height: 60px;
+            }
+    
+            h1{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-left: 0.5rem;
+            }
+        }
+    
+        #regular-nav-bar{
+            display: none;
+            @media (min-width: $sm-breakpoint) {
+                display: flex;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                min-height: 30px;
+                margin: 0.5rem;
+                padding: 0.4em 1em;
+                border-radius: $radius-lg;
+                background-color: $slate-100;
+                transition: background-color 0.3s;
+    
+                &:hover{
+                    background-color: $slate-300;
+                }
+    
+                i{
+                    font-size: 2em;
+                    display: flex;
+                    transition-property: color;
+    
+                    &:hover{
+                        color: $gray-900;
+                    }
+    
+                    @media (min-width: $lg-breakpoint) {
+                        margin-right: 0.2em;
+                    }
+                }
+                div{
+                    display: none;
+                    @media (min-width: $lg-breakpoint){
+                        display: block;
+                    }
+                }
+            }
+        }
+    
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-right: 5px;
+    
+            @media (min-width: $sm-breakpoint) {
+                display: none;
+            }
+        }
+    }
+
+    #mobile-nav-menu{
+        padding: 0.75rem 0 1rem 0;
+        display: none;
+
+        ul{
+            list-style: none;
+            text-align: center;
+            li{
+                padding: 0.4em;
+                margin: 0.4rem;
+                font-size: $text-lg;
+                a{
+                    display: block;
+                    min-height: 30px;
+                    padding: 0.4em 1em;
+                    margin: 0 10%;
+                    border-radius: $radius-lg;
+                    background-color: $slate-100;
+                    transition: background-color 0.3s;
+
+                    &:hover{
+                        background-color: $slate-300;
+                    }
+
+                    i{
+                        font-size: 2em;
+                        transition-property: color;
+                        margin-right: 0.2em;
+    
+                        &:hover{
+                            color: $gray-900;
+                        }
+                    }
+                }
+            }
         }
     }
 }
