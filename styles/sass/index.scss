@@ -1,2 +1,109 @@
 @use "./partials/site-defaults";
 @use "./partials/_header.scss";
+@use "./partials/index/_main-projects.scss";
+
+// Tailwind breakpoints
+$sm-breakpoint: 40rem;
+$md-breakpoint: 48rem;
+$lg-breakpoint: 64rem;
+$xl-breakpoint: 80rem;
+
+main{
+    #bio-section{
+        align-items: center;
+        @media (min-width: $sm-breakpoint){
+            display: flex;
+            justify-items: center;
+            margin: 1.5rem 7%;
+        }
+        @media (min-width: $lg-breakpoint){
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #personal-image{
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 18%;
+
+            @media (min-width: $sm-breakpoint){
+                display: block;
+                margin: 0;
+                width: 32vw;
+                flex-shrink: 0;
+            }
+            @media (min-width: $md-breakpoint){
+                width: 30vw;
+            }
+            @media (min-width: $lg-breakpoint){
+                width: 25vw;
+            }
+
+            img{
+                border-radius: 100%;
+                border: 5px solid black;
+                max-height: 300px;
+                width: calc(100% - 10px);
+
+                @media (min-width: $sm-breakpoint){
+                    max-height: none;
+                }
+            }
+        }
+
+        #bio-text{
+            padding: 0 1.5rem 1.5rem 1.5rem;
+
+            @media (min-width: $sm-breakpoint){
+                flex-shrink: 1;
+                padding: 1em;
+            }
+            @media (min-width: $md-breakpoint){
+                padding-left: 1.5em;
+            }
+            @media (min-width: $lg-breakpoint){
+                padding-left: 2em;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 3.75rem;
+                font-weight: 600;
+                margin: 0;
+
+                @media (min-width: $sm-breakpoint){
+                    text-align: left;
+                }
+            }
+
+            #introduction{
+                margin: 1em 0;
+                color: #333333;
+                text-indent: 2em;
+            }
+        }
+    }
+
+    #tagline{
+        margin: 0.5rem;
+        padding: 1em 0;
+        color: #333333;
+
+        hr{
+            margin: 0 5%;
+        }
+        #tagline-text{
+            text-align: center;
+            font-size: 1.25em;
+            margin: 0.2em;
+        }
+    }
+
+    // Start of Projects Section
+    #projects-header{
+        font-size: 2.25rem;
+        text-indent: 1em;
+        font-weight: bold;
+        margin: 0.5em 0;
+    }
+}
