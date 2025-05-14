@@ -388,6 +388,26 @@ header #mobile-nav-menu ul li a i:hover {
   margin: 0.1875rem 0 0.1875rem 0.3125rem;
 }
 
+footer {
+  background-color: #207EE6;
+  margin-top: 1.75rem;
+  padding: 1.4em 1.25em 1.25em 1.25em;
+}
+footer #footer-socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+@media (min-width: 64rem) {
+  footer #footer-socials {
+    display: none;
+  }
+}
+footer #footer-socials a {
+  display: block;
+  padding: 5px;
+}
+
 * {
   margin: 0;
 }

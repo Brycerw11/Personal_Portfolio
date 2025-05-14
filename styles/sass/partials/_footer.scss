@@ -1,0 +1,29 @@
+// Tailwind breakpoints
+$sm-breakpoint: 40rem;
+$md-breakpoint: 48rem;
+$lg-breakpoint: 64rem;
+$xl-breakpoint: 80rem;
+
+footer{
+    background-color: #207EE6;
+    margin-top: 1.75rem;
+    padding: 1.4em 1.25em 1.25em 1.25em;
+
+    #footer-socials{ //footer socials for non desktop layouts
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+
+        @media (min-width: $lg-breakpoint){
+            display: none;
+        }
+
+        a{
+            // block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md
+            display: block;
+            padding: 5px;
+
+            
+        }
+    }
+}

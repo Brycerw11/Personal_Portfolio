@@ -1,6 +1,7 @@
 @use "./partials/site-defaults";
 @use "./partials/_header.scss";
 @use "./partials/index/_main-projects.scss";
+@use "./partials/_footer.scss";
 
 // Tailwind breakpoints
 $sm-breakpoint: 40rem;
