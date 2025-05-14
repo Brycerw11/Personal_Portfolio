@@ -8,6 +8,15 @@ $md-breakpoint: 48rem;
 $lg-breakpoint: 64rem;
 $xl-breakpoint: 80rem;
 
+// Tailwind Colors
+$slate-200: oklch(92.9% 0.013 255.508);
+$gray-200: oklch(92.8% 0.006 264.531);
+$gray-900: oklch(21% 0.034 264.665);
+
+
+// Remove all default stylings
+*{margin: 0;}
+
 main{
     #bio-section{
         align-items: center;
@@ -106,7 +115,9 @@ main{
         font-weight: bold;
         margin: 0.5em 0;
     }
+    // The remainder of the projects section is in the _main-projects.scss partial
 
+    // Start of contact me section
     #contact-me-header{
         font-size: 2.25rem;
         text-indent: 1em;
@@ -138,6 +149,126 @@ main{
 
             #social-medias-header{
                 display: none;
+                font-size: 1.125rem;
+                text-align: center;
+                font-weight: 600;
+
+                @media (min-width: $sm-breakpoint){
+                    display: block;
+                }
+                @media (min-width: $lg-breakpoint){
+                    text-align: left;
+                }
+            }
+
+            #social-media-link{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                width: fit-content;
+                border-radius: 0.75rem;
+                padding: 0.55em 0.9em;
+                transition: background-color 0.3s;
+
+                &:hover{background-color: $slate-200;}
+
+                i{
+                    font-size: 3em;
+                    margin-right: 0.1em;
+                    transition-property: color;
+
+                    &:hover{color: $gray-900;}
+                }
+                #social-text{
+                    font-weight: bold;
+                    #social-name{
+                        font-size: 1.25rem;
+                    }
+                    #social-handle{
+                        font-size: 0.875rem;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+
+        #email-me-section{
+            flex-grow: 1;
+            margin: 1rem 7% 0 7%;
+
+            @media (min-width: $sm-breakpoint){
+                margin: 0 2rem 0 1rem;
+            }
+            @media (min-width: $lg-breakpoint){
+                flex-grow: 7;
+            }
+
+            #email-me-header-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0.5em;
+
+                #email-me-header{
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                }
+                a{
+                    color: #0078d7;
+                    text-decoration: underline;
+                }
+            }
+
+            form{
+                padding: 1em;
+                border: 4px solid black;
+                border-radius: 0.75rem;
+
+                .input-container{
+                    margin-bottom: 0.3em;
+
+                    input{
+                        border: 2px solid black;
+                        border-radius: 0.25rem;
+                    }
+                }
+
+                #email-input-container > input{
+                    width: 70%;
+                }
+                #subject-input-container.input-container{
+                    margin: 0.8em 0 0.1em 0;
+
+                    input{
+                        width: 60%;
+                        &:active{border-color: #0078d7;}
+                    }
+                }
+                #message-input-container{
+                    textarea{
+                        width: 100%;
+                        min-height: 50px;
+                    }
+                }
+
+                #email-me-buttons{
+                    display: flex;
+                    justify-content: space-between;
+
+                    button{
+                        // border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300
+                        padding: 0.2em 0.6em;
+                        min-width: 4.75rem;
+                        border-radius: 0.375rem;
+                        border: 2px solid black;
+                        font-size: 0.9em;
+
+                        transition: background-color 0.3s;
+                        &:hover{
+                            background-color: $gray-200;
+                        }
+                    }
+                }
             }
         }
     }

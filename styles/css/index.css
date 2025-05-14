@@ -388,6 +388,10 @@ header #mobile-nav-menu ul li a i:hover {
   margin: 0.1875rem 0 0.1875rem 0.3125rem;
 }
 
+* {
+  margin: 0;
+}
+
 main #bio-section {
   align-items: center;
 }
@@ -526,4 +530,118 @@ main #contact-me-section #social-medias-section {
 }
 main #contact-me-section #social-medias-section #social-medias-header {
   display: none;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 600;
+}
+@media (min-width: 40rem) {
+  main #contact-me-section #social-medias-section #social-medias-header {
+    display: block;
+  }
+}
+@media (min-width: 64rem) {
+  main #contact-me-section #social-medias-section #social-medias-header {
+    text-align: left;
+  }
+}
+main #contact-me-section #social-medias-section #social-media-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: fit-content;
+  border-radius: 0.75rem;
+  padding: 0.55em 0.9em;
+  transition: background-color 0.3s;
+}
+main #contact-me-section #social-medias-section #social-media-link:hover {
+  background-color: oklch(92.9% 0.013 255.508);
+}
+main #contact-me-section #social-medias-section #social-media-link i {
+  font-size: 3em;
+  margin-right: 0.1em;
+  transition-property: color;
+}
+main #contact-me-section #social-medias-section #social-media-link i:hover {
+  color: oklch(21% 0.034 264.665);
+}
+main #contact-me-section #social-medias-section #social-media-link #social-text {
+  font-weight: bold;
+}
+main #contact-me-section #social-medias-section #social-media-link #social-text #social-name {
+  font-size: 1.25rem;
+}
+main #contact-me-section #social-medias-section #social-media-link #social-text #social-handle {
+  font-size: 0.875rem;
+  color: #333333;
+}
+main #contact-me-section #email-me-section {
+  flex-grow: 1;
+  margin: 1rem 7% 0 7%;
+}
+@media (min-width: 40rem) {
+  main #contact-me-section #email-me-section {
+    margin: 0 2rem 0 1rem;
+  }
+}
+@media (min-width: 64rem) {
+  main #contact-me-section #email-me-section {
+    flex-grow: 7;
+  }
+}
+main #contact-me-section #email-me-section #email-me-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5em;
+}
+main #contact-me-section #email-me-section #email-me-header-container #email-me-header {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+main #contact-me-section #email-me-section #email-me-header-container a {
+  color: #0078d7;
+  text-decoration: underline;
+}
+main #contact-me-section #email-me-section form {
+  padding: 1em;
+  border: 4px solid black;
+  border-radius: 0.75rem;
+}
+main #contact-me-section #email-me-section form .input-container {
+  margin-bottom: 0.3em;
+}
+main #contact-me-section #email-me-section form .input-container input {
+  border: 2px solid black;
+  border-radius: 0.25rem;
+}
+main #contact-me-section #email-me-section form #email-input-container > input {
+  width: 70%;
+}
+main #contact-me-section #email-me-section form #subject-input-container.input-container {
+  margin: 0.8em 0 0.1em 0;
+}
+main #contact-me-section #email-me-section form #subject-input-container.input-container input {
+  width: 60%;
+}
+main #contact-me-section #email-me-section form #subject-input-container.input-container input:active {
+  border-color: #0078d7;
+}
+main #contact-me-section #email-me-section form #message-input-container textarea {
+  width: 100%;
+  min-height: 50px;
+}
+main #contact-me-section #email-me-section form #email-me-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+main #contact-me-section #email-me-section form #email-me-buttons button {
+  padding: 0.2em 0.6em;
+  min-width: 4.75rem;
+  border-radius: 0.375rem;
+  border: 2px solid black;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+main #contact-me-section #email-me-section form #email-me-buttons button:hover {
+  background-color: oklch(92.8% 0.006 264.531);
 }/*# sourceMappingURL=index.css.map */
