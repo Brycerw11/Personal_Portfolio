@@ -87,6 +87,11 @@ header{
             align-items: center;
             align-content: center;
             margin-right: 5px;
+
+            img{
+                width: 60px;
+                height: 60px;
+            }
     
             @media (min-width: $sm-breakpoint) {
                 display: none;

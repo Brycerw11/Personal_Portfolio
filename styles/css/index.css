@@ -78,6 +78,10 @@ header #header-main nav {
   align-content: center;
   margin-right: 5px;
 }
+header #header-main nav img {
+  width: 60px;
+  height: 60px;
+}
 @media (min-width: 40rem) {
   header #header-main nav {
     display: none;
@@ -121,6 +125,7 @@ header #mobile-nav-menu ul li a i:hover {
   display: flex;
   margin: 0 5%;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 @media (min-width: 64rem) {
@@ -137,10 +142,11 @@ header #mobile-nav-menu ul li a i:hover {
   border-radius: 1.5rem;
   margin: 0.25rem;
   height: fit-content;
+  width: 95%;
 }
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
   #projects-container .project-container {
-    width: 46%;
+    width: 43%;
   }
 }
 #projects-container .project-container #project-name {
@@ -150,6 +156,7 @@ header #mobile-nav-menu ul li a i:hover {
 @media (min-width: 40rem) {
   #projects-container .project-container #project-content {
     display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 64rem) {
@@ -170,7 +177,7 @@ header #mobile-nav-menu ul li a i:hover {
 }
 @media (min-width: 48rem) {
   #projects-container .project-container #project-content #project-description {
-    padding-top: 0.5em;
+    padding-top: 0.75em;
   }
 }
 @media (min-width: 64rem) {
@@ -334,6 +341,7 @@ header #mobile-nav-menu ul li a i:hover {
 }
 #projects-container #misc-projects #misc-project-container #misc-projects-project-selection #misc-project-image-container img {
   width: 100%;
+  height: 25vh;
 }
 #projects-container #misc-projects #misc-project-container #misc-project-desc {
   text-indent: 2em;
@@ -393,6 +401,22 @@ footer {
   margin-top: 1.75rem;
   padding: 1.4em 1.25em 1.25em 1.25em;
 }
+footer .footer-socials a {
+  display: block;
+  padding: 5px;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s;
+}
+footer .footer-socials a:hover {
+  background-color: oklch(92.9% 0.013 255.508, 0.9);
+}
+footer .footer-socials a i {
+  font-size: 3em;
+  transition: color 0.3s;
+}
+footer .footer-socials a i:hover {
+  color: oklch(92.9% 0.013 255.508, 0.9);
+}
 footer #footer-socials {
   display: flex;
   justify-content: space-evenly;
@@ -403,9 +427,81 @@ footer #footer-socials {
     display: none;
   }
 }
-footer #footer-socials a {
-  display: block;
-  padding: 5px;
+footer #footer-primary-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+footer #footer-primary-content img {
+  width: 75px;
+  height: 75px;
+}
+footer #footer-primary-content #desktop-footer-socials {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media (min-width: 64rem) {
+  footer #footer-primary-content #desktop-footer-socials {
+    display: flex;
+  }
+}
+footer #footer-primary-content #copyright-text {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+footer #footer-primary-content .to-top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 3.75rem;
+  width: 3.75rem;
+}
+footer #footer-primary-content #compact-to-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: oklch(92.9% 0.013 255.508);
+  border-radius: calc(infinity * 1px);
+  transition: background-color 0.3s;
+}
+footer #footer-primary-content #compact-to-top-button:hover {
+  background-color: oklch(70.4% 0.04 256.788);
+}
+@media (min-width: 40rem) {
+  footer #footer-primary-content #compact-to-top-button {
+    display: none;
+  }
+}
+footer #footer-primary-content #compact-to-top-button i {
+  font-size: 2.5em;
+}
+footer #footer-primary-content #expanded-to-top-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 3.75rem;
+  padding: 0 1.6em 0 1em;
+  border-radius: calc(infinity * 1px);
+  background-color: oklch(92.9% 0.013 255.508);
+  transition: background-color 0.3s;
+}
+footer #footer-primary-content #expanded-to-top-button:hover {
+  background-color: oklch(70.4% 0.04 256.788);
+}
+@media (min-width: 40rem) {
+  footer #footer-primary-content #expanded-to-top-button {
+    display: flex;
+  }
+}
+footer #footer-primary-content #expanded-to-top-button i {
+  font-size: 2.4em;
 }
 
 * {
@@ -455,6 +551,7 @@ main #bio-section #personal-image img {
   border-radius: 100%;
   border: 5px solid black;
   max-height: 300px;
+  max-width: 300px;
   width: calc(100% - 10px);
 }
 @media (min-width: 40rem) {
@@ -524,6 +621,7 @@ main #contact-me-header {
 }
 main #contact-me-section {
   display: block;
+  font-size: 1.2em;
 }
 @media (min-width: 40rem) {
   main #contact-me-section {
@@ -649,6 +747,7 @@ main #contact-me-section #email-me-section form #subject-input-container.input-c
 main #contact-me-section #email-me-section form #message-input-container textarea {
   width: 100%;
   min-height: 50px;
+  border-radius: 6px;
 }
 main #contact-me-section #email-me-section form #email-me-buttons {
   display: flex;
