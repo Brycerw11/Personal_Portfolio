@@ -7,9 +7,6 @@
     <meta name="description" content="I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS.">
 
     <title>Home - Bryce Wahl</title>
-
-    <!-- Add TailwindCSS via CDN -->
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     
     <!-- Add jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -20,45 +17,49 @@
 </head>
 <body>
     <header>
-        <div id="header-main" class="flex justify-between p-[0.5rem]">
-            <div id="personal-info-container" class="flex items-center">
-                <img class="w-[60px] h-[60px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
-                <h1 class="text-2xl font-bold ml-[0.5rem]">Bryce Wahl</h1>
+        <div id="header-main">
+            <div id="personal-info-container">
+                <img src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
+                <h1>Bryce Wahl</h1>
             </div>
 
             <!-- Nav bar when not on mobile -->
-            <div id="regular-nav-bar" class="hidden sm:flex">
-                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#">Home</a>
-                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#contact-me-header">About</a>
-                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#projects-header">Projects</a>
-                <a class="flex items-center min-h-[30px] m-[0.5rem] px-[1em] py-[0.4em] rounded-lg bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="https://github.com/Brycerw11">
-                    <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors lg:mr-[0.2em] flex"></i>
-                    <div class="hidden lg:block">My Github</div>
+            <div id="regular-nav-bar">
+                <a href="#">Home</a>
+                <a href="#contact-me-header">About</a>
+                <a href="#projects-header">Projects</a>
+                <a href="#contact-me-header">Contact Me</a>
+                <a href="https://github.com/Brycerw11">
+                    <i class="fa-brands fa-github"></i>
+                    <div>My Github</div>
                 </a>
             </div>
 
             <!-- Button to toggle nav menu when on mobile -->
-            <nav class="flex sm:hidden justify-center items-center content-center mr-[5px]">
-                <img id="hamburger-menu-icon" class="size-[35px] transition-transform duration-1000" src="./images/ui/HamburgerMenuIcon.svg" alt="Hamburger Menu Icon">
+            <nav>
+                <img id="hamburger-menu-icon" src="./images/ui/HamburgerMenuIcon.svg" alt="Hamburger Menu Icon">
             </nav>
         </div>
 
         <!-- Nav menu when on mobile -->
-        <div id="mobile-nav-menu" class="pt-[0.75rem] pb-[1rem] hidden">
+        <div id="mobile-nav-menu">
 
-            <ul class="list-none text-center">
-                <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#">Home</a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
                 </li>
-                <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#contact-me-header">About</a>
+                <li>
+                    <a href="#contact-me-header">About</a>
                 </li>
-                <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a class="block min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300" href="#projects-header">Projects</a>
+                <li>
+                    <a href="#projects-header">Projects</a>
                 </li>
-                <li class="p-[0.4em] text-lg m-[0.4rem]">
-                    <a href="https://github.com/Brycerw11" class="flex content-center items-center justify-center min-h-[30px] px-[1em] py-[0.4em] rounded-lg mx-[10%] bg-slate-100 hover:bg-slate-300 transition-colors duration-300">
-                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                <li>
+                    <a href="#contact-me-header">Contact Me</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Brycerw11">
+                        <i class="fa-brands fa-github"></i>
                         My Github
                     </a>
                 </li>
@@ -72,190 +73,190 @@
     <main>
 
         <!-- Start of Bio Section -->
-        <div id="bio-section" class="sm:flex sm:items-center sm:my-[1.5rem] sm:mx-[7%] lg:mx-[5%]">
-            <div id="personal-image" class="flex justify-center sm:block mx-[18%] my-[1.5rem] sm:mx-0 sm:my-0 sm:w-[32vw] md:w-[30vw] lg:w-[25vw] sm:shrink-0">
-                <img class="rounded-full border-5 max-h-[300px] sm:max-h-none" src="./images/branding/BryceWahlPicture.jpg" alt="Image of Bryce Wahl">
+        <div id="bio-section">
+            <div id="personal-image">
+                <img src="./images/branding/BryceWahlPicture.jpg" alt="Image of Bryce Wahl">
             </div>
     
-            <div id="bio-text" class="p-[1.5em] pt-0 sm:p-[1em] sm:pt-[1em] md:pl-[1.5em] lg:pl-[2em] sm:shrink">
-                <h1 class="text-center text-6xl font-semibold sm:text-left">Bryce Wahl</h1>
-                <p id="introduction" class="my-[1em] text-[#333333] indent-[2em]">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
+            <div id="bio-text">
+                <h1>Bryce Wahl</h1>
+                <p id="introduction">I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS. I also occasionally expirement with projects in other languages and fields.</p>
             </div>
         </div>
 
         <!-- Tagline section -->
-        <div id="tagline" class="m-[0.5rem] py-[1em] text-[#333333]">
-            <hr class="mx-[5%]">
-            <h3 id="tagline-text" class="text-center text-[1.25em] m-[0.2em]">Hire Me!!!</h3>
-            <hr class="mx-[5%]">
+        <div id="tagline">
+            <hr>
+            <h3 id="tagline-text">Hire Me!!!</h3>
+            <hr>
         </div>     
         
         <!-- Start of Projects Section -->
-        <h2 id="projects-header" class="text-4xl indent-[1em] font-bold my-[0.5em]">Projects</h2>
+        <h2 id="projects-header">Projects</h2>
 
-        <div id="projects-container" class="flex mx-[5%] flex-wrap">
+        <div id="projects-container">
 
             <!-- Project 1 Section -->
-            <div id="project1" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Personal Portfolio</h3>
+            <div id="project1" class="project-container">  
+                <h3 id="project-name">Personal Portfolio</h3>
                 
-                <div id="project-content" class="sm:flex lg:items-center">
+                <div id="project-content">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    <p id="project-description">
                         My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
                     </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                    <h5 id="project-tools">
                         Tools: HTML, Tailwind CSS, and JS with jQuery
                     </h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] lg:w-[75%] lg:flex-grow">
-                        <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[35%] lg:w-[38%] border-2" src="./images/project_images/PersonalPortfolioMobileSite.png" alt="Screenshot of mobile version of the project">
-                            <img class="w-[30vw] sm:w-[45%] lg:w-[51%] border-2" src="./images/project_images/PersonalPortfolioDesktopSite.png" alt="Screenshot of desktop version of the project">
+                    <div id="project-image-container">
+                        <div id="project-images">
+                            <img  src="./images/project_images/PersonalPortfolioMobileSite.png" alt="Screenshot of mobile version of the project">
+                            <img  src="./images/project_images/PersonalPortfolioDesktopSite.png" alt="Screenshot of desktop version of the project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                        <h5 id="project-tools-tablet">
                             Tools: HTML, Tailwind CSS, and JS with jQuery
                         </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                <p id="project-description">
                     My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
                 </p>
                 
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:text-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11/Personal_Portfolio" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                <div id="project-links">
+                    <a href="https://github.com/Brycerw11/Personal_Portfolio">
+                        <i class="fa-brands fa-github "></i>
                         GitHub Repo
                     </a>
-                    <a href="https://brycerw11.github.io/Personal_Portfolio/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/Personal_Portfolio/">
                         Link to Demo
-                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                        <i class="fa fa-link" aria-="true"></i>
                     </a>
                 </div>
             </div>
 
 
             <!-- Project 2 Section -->
-            <div id="project2" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Community Center Website</h3>
+            <div id="project2" class="project-container ">  
+                <h3 id="project-name">Community Center Website</h3>
                 
-                <div id="project-content" class="sm:flex lg:items-center">
+                <div id="project-content">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    <p id="project-description">
                         A website for a fictional community center at the West-MEC Northeast Campus. Designed for the FBLA Website Design Event's 2024-2025 Prompt.
                     </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                    <h5 id="project-tools">
                         Tools: HTML, CSS, and JS
                     </h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] lg:w-[75%] lg:flex-grow">
-                        <div id="project-images" class="flex justify-around items-center content-center">
-                            <img class="w-[30vw] sm:w-[45%] lg:w-[48%] border-2" src="./images/project_images/CommunityCenterDesktopScreenshot.png" alt="Screenshot of desktop version of the project">
-                            <img class="w-[30vw] sm:w-[38%] lg:w-[43%] border-2" src="./images/project_images/CommunityCenterMobileScreenshot.jpg" alt="Screenshot of the mobile version of the project">
+                    <div id="project-image-container">
+                        <div id="project-images">
+                            <img src="./images/project_images/CommunityCenterDesktopScreenshot.png" alt="Screenshot of desktop version of the project">
+                            <img src="./images/project_images/CommunityCenterMobileScreenshot.jpg" alt="Screenshot of the mobile version of the project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                        <h5 id="project-tools-tablet">
                             Tools: HTML, CSS, and JS
                         </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                <p id="project-description">
                     A website for a fictional community center at the West-MEC Northeast Campus. Designed for the FBLA Website Design Event's 2024-2025 Prompt.
                 </p>
                 
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11/community_center_website" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                <div id="project-links">
+                    <a href="https://github.com/Brycerw11/community_center_website">
+                        <i class="fa-brands fa-github "></i>
                         GitHub Repo
                     </a>
-                    <a href="https://brycerw11.github.io/community_center_website/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/community_center_website/">
                         Link to Demo
-                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                        <i class="fa fa-link" aria-="true"></i>
                     </a>
                 </div>
             </div>
 
 
             <!-- Project 3 Section -->
-            <div id="project3" class="project-container flex justify-center flex-col m-[0.5rem] rounded-3xl border-4 p-[0.75em] lg:w-[48%]">  
-                <h3 id="project-name" class="text-[1.6875rem] font-bold">Picture Grid Website</h3>
+            <div id="project3" class="project-container">  
+                <h3 id="project-name">Picture Grid Website</h3>
                 
-                <div id="project-content" class="sm:flex lg:items-center">
+                <div id="project-content">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
-                    <p id="project-description" class="lg:hidden sm:w-[60%] md:pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                    <p id="project-description">
                         A website made entirely of pictures, using CSS grids for the layout.
                     </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
-                    <h5 id="project-tools" class="sm:hidden lg:block text-center text-[#333333] my-[0.5rem] lg:w-[30%] lg:text-lg lg:text-[#333333]">
+                    <h5 id="project-tools">
                         Tools: HTML and CSS
                     </h5>
                     
-                    <div id="project-image-container" class="sm:w-[60%] lg:flex-grow">
-                        <div id="project-images" class="flex justify-around items-center content-center">
-                            <img style="width: 25vw;" class="w-[30vw] sm:w-[85%] lg:w-[95%] border-2" src="./images/project_images/PictureGridWebsiteScreenshot.png" alt="Screenshot of project">
+                    <div id="project-image-container">
+                        <div id="project-images">
+                            <img style="width: 25vw;" class=" [85%] [95%] " src="./images/project_images/PictureGridWebsiteScreenshot.png" alt="Screenshot of project">
                         </div>
                         <!-- Project Tools for Tablet version -->
-                        <h5 id="project-tools-tablet" class="hidden sm:block lg:hidden text-center text-[#333333] my-[0.5rem]">
+                        <h5 id="project-tools-tablet">
                             Tools: HTML and CSS
                         </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
-                <p id="project-description" class="hidden lg:block pt-[0.5em] text-[#333333] indent-[2em] max-h-[12.5rem] overflow-y-auto">
+                <p id="project-description">
                     A website made entirely of pictures, using CSS grids for the layout.
                 </p>
                 
                 <!-- Project's links to GitHub and Demo-->
-                <div id="project-links" class="flex justify-between overflow-x-auto text-[0.9em] sm:test-[1em] md:text-[1.1em] lg:mt-[0.5rem]">
-                    <a href="https://github.com/Brycerw11/Picture_Grid_Project" class="flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                        <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                <div id="project-links">
+                    <a href="https://github.com/Brycerw11/Picture_Grid_Project">
+                        <i class="fa-brands fa-github "></i>
                         GitHub Repo
                     </a>
-                    <a href="https://brycerw11.github.io/Picture_Grid_Project/" class="text-right flex items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
+                    <a href="https://brycerw11.github.io/Picture_Grid_Project/">
                         Link to Demo
-                        <i class="fa fa-link  border-3 rounded-full px-[0.375rem] pt-[0.48rem] pb-[0.47rem] my-[0.1875em] ml-[0.3125em]" aria-hidden="true"></i>
+                        <i class="fa fa-link  " aria-="true"></i>
                     </a>
                 </div>
             </div>
 
             
             <!-- Miscellaneous Works Section to fill empty space on desktop layout -->
-            <div id="misc-projects" class="project-container hidden lg:flex flex-col w-[48%] m-[0.5rem] rounded-3xl border-4 p-[0.75em]">
-                <h3 id="misc-works-header" class="text-[1.6875rem] font-bold flex-shrink-0">Miscellaneous Projects</h3>
+            <div id="misc-projects" class="project-container">
+                <h3 id="misc-works-header" >Miscellaneous Projects</h3>
                 
-                <div id="misc-project-container" class="my-auto"> <!-- Allows the content of the misc project section to be centered vertically when the misc project section itself is too big-->
+                <div id="misc-project-container"> <!-- Allows the content of the misc project section to be centered vertically when the misc project section itself is too big-->
 
-                    <h4 id="misc-works-project-header" class="text-[1.2875rem] font-bold">Project Title</h4>
+                    <h4 id="misc-works-project-header">Project Title</h4>
                     
                     <div class="project-content">
-                        <div id="misc-projects-project-selection" class="flex justify-between p-[1em] items-center">
-                            <i id="misc-works-left" direction="left" class="misc-works-button fa fa-arrow-circle-left text-5xl"></i>
-                            <div id="misc-project-image-container" class="mx-[3em] overflow-hidden">
+                        <div id="misc-projects-project-selection">
+                            <i id="misc-works-left" direction="left" class="misc-works-button fa fa-arrow-circle-left "></i>
+                            <div id="misc-project-image-container">
                                 <img id="misc-project-image" src="./images/placeholders/NoImageAvailablePlaceholder.jpg" alt="Screenshot of the project">
                             </div>
-                            <i id="misc-works-right" direction="right" class="misc-works-button fa fa-arrow-circle-right text-5xl"></i>
+                            <i id="misc-works-right" direction="right" class="misc-works-button fa fa-arrow-circle-right "></i>
                         </div>
     
-                        <p id="misc-project-desc" class="indent-[2em] text-[#333333]">
+                        <p id="misc-project-desc">
                             <!-- Placeholder text that the JS will replace -->
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, facilis dolore sunt maiores beatae sed error dignissimos, reprehenderit quos maxime excepturi optio quod qui nisi dicta ea ut perspiciatis exercitationem?
                         </p>
                     </div>
     
                     <!-- Project's links to GitHub and Demo-->
-                    <div id="misc-project-links" class="flex justify-between items-center overflow-x-auto text-[0.9em] text-[1.1em] mt-[0.75rem] flex-shrink-0">
-                        <a id="misc-project-github-link" href="https://github.com/Brycerw11" class="flex flex-shrink-0 items-center py-[0.25em] px-[0.5em] rounded-md hover:bg-slate-200 transition-colors duration-300">
-                            <i class="fa-brands fa-github text-[2em] hover:text-gray-900 transition-colors mr-[0.2em]"></i>
+                    <div id="misc-project-links">
+                        <a id="misc-project-github-link" href="https://github.com/Brycerw11">
+                            <i class="fa-brands fa-github"></i>
                             GitHub Repo
                         </a>
-                        <p id="misc-project-tools" class="ml-[0.5rem] text-right text-[0.9em]">Tools: Unity 6.0, C#, and Visual Studio</p>
+                        <p id="misc-project-tools">Tools: Unity 6.0, C#, and Visual Studio</p>
                     </div>
 
                 </div> <!-- End of project's container -->
@@ -265,64 +266,64 @@
 
 
         <!-- Start of Contact Me Section -->
-        <h2 id="contact-me-header" class="text-4xl indent-[1em] font-bold my-[0.4em] mt-[2.5rem]">Contact Me</h2>
+        <h2 id="contact-me-header">Contact Me</h2>
 
-        <div id="contact-me-section" class="block sm:flex ">
+        <div id="contact-me-section">
             
-            <div id="social-medias-section" class="flex justify-around flex-wrap flex-row m-[0.5rem] sm:ml-[2rem] sm:flex-col lg:grow-1">
+            <div id="social-medias-section">
 
                 <!-- Links to My Social Medias -->
-                <h3 id="social-medias-header" class="hidden sm:block text-lg text-center font-semibold lg:text-left">Social Medias</h3>
-                <a href="https://github.com/Brycerw11" id="social-media-link" class="flex justify-between items-center content-center w-fit rounded-xl px-[0.9em] py-[0.55em] hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-github-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <h3 id="social-medias-header" class="  lg  font-semibold left">Social Medias</h3>
+                <a href="https://github.com/Brycerw11" id="social-media-link" class="    fit rounded-xl px- [0.55em] hover:bg-slate-200 transition-colors duration-300">
+                    <i class="fa-brands fa-github-square [3em] hover:gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
-                        <h5 id="social-name" class="text-xl font-bold">GitHub</h5>
-                        <h6 id="social-handle" class="text-[#333333] text-sm">Brycerw11</h6>
+                        <h5 id="social-name">GitHub</h5>
+                        <h6 id="social-handle">Brycerw11</h6>
                     </div>
                 </a>
-                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] w-fit rounded-xl hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-twitter-square text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <a href="#" id="social-media-link">
+                    <i class="fa-brands fa-twitter-square [3em] hover:gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
-                        <h5 id="social-name" class="text-xl font-bold">Twitter</h5>
-                        <h6 id="social-handle" class="text-[#333333] text-sm">@Brycerw11</h6>
+                        <h5 id="social-name">Twitter</h5>
+                        <h6 id="social-handle">@Brycerw11</h6>
                     </div>
                 </a>
-                <a href="#" id="social-media-link" class="flex justify-between items-center content-center px-[0.9em] py-[0.55em] w-fit rounded-xl hover:bg-slate-200 transition-colors duration-300">
-                    <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-900 transition-colors mr-[0.1em]"></i>
+                <a href="#" id="social-media-link">
+                    <i class="fa-brands fa-linkedin [3em] hover:gray-900 transition-colors mr-[0.1em]"></i>
                     <div id="social-text">
-                        <h5 id="social-name" class="text-xl font-bold">LinkedIn</h5>
-                        <h6 id="social-handle" class="text-[#333333] text-sm">Bryce Wahl</h6>
+                        <h5 id="social-name">LinkedIn</h5>
+                        <h6 id="social-handle">Bryce Wahl</h6>
                     </div>
                 </a>
             </div>
 
             <!-- Form to email me -->
-            <div id="email-me-section" class="grow lg:grow-7 mx-[7%] mt-[1rem] sm:mt-0 sm:ml-[1rem] sm:mr-[2rem]">
-                <div id="email-me-header-container" class="flex justify-between  px-[0.5em]">
-                    <h3 id="email-me-header" class="text-lg font-semibold">Email Me</h3>
-                    <a href="mailto:brycewahl07@gmail.com" class="text-[#0078d7] underline">brycewahl07@gmail.com</a>
+            <div id="email-me-section">
+                <div id="email-me-header-container">
+                    <h3 id="email-me-header">Email Me</h3>
+                    <a href="mailto:brycewahl07@gmail.com">brycewahl07@gmail.com</a>
                 </div>
-                <form action="#" id="email-form" class="border-4 rounded-xl p-[1em] ">
+                <form action="#" id="email-form">
                     <div id="name-input-container" class="input-container">
                         <label for="email-name-input">Your Name:</label>
-                        <input id="email-name-input" type="text" placeholder="e.g. John Smith" class="border-2 rounded-sm">
+                        <input id="email-name-input" type="text" placeholder="e.g. John Smith">
                     </div>
                     <div id="email-input-container" class="input-container">
                         <label for="email-email-input">Your Email:</label>
-                        <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com" class="border-2 rounded-sm w-[70%]">
+                        <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com">
                     </div>
-                    <div id="subject-input-container" class="input-container mt-[0.8em] mb-[0.1em]">
+                    <div id="subject-input-container" class="input-container">
                         <label for="email-subject-input">Subject:</label>
-                        <input id="email-subject-input" type="email" placeholder="e.g. Question regarding your 'Portfolio' project" class="border-2 rounded-sm w-[60%] active:border-[#0078d7]">
+                        <input id="email-subject-input" type="email" placeholder="e.g. Question regarding your 'Portfolio' project" >
                     </div>
                     <div id="message-input-container" class="input-container">
                         <label for="message-body-input">Message Body:</label>
                         <br>
-                        <textarea name="message-body-input-name" id="message-body-input" class="border-2 rounded-sm w-[100%] min-h-[50px]" rows="5"></textarea>
+                        <textarea name="message-body-input-name" id="message-body-input" rows="5"></textarea>
                     </div>
-                    <div id="email-me-buttons" class="flex justify-between">
-                        <button id="reset-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="reset">Reset</button>
-                        <button id="send-email-form-button" class="border-2 rounded-md py-[0.1em] px-[0.6em] min-w-[4.75rem] hover:bg-gray-200 transition-colors duration-300" type="submit">Send</button>
+                    <div id="email-me-buttons">
+                        <button id="reset-email-form-button" type="reset">Reset</button>
+                        <button id="send-email-form-button" type="submit">Send</button>
                     </div>
                 </form>
             </div>
@@ -331,39 +332,39 @@
     </main>
 
     <!-- Site Footer -->
-    <footer class="p-[1.25em] pt-[1.4em] mt-[1.75rem]">
+    <footer>
         
         <!-- Social Media links for non-desktop layouts -->
-        <div id="footer-socials" class="footer-socials flex justify-evenly pb-[1rem] lg:hidden">
-            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
-            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
-            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
-            <a href="#" class="block p-[5px] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+        <div id="footer-socials" class="footer-socials  justify-evenly pb-[1rem] ">
+            <a href="#"> <i class="fa-brands fa-github"> </i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i> </i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"> <i class="fa fa-envelope"></i> </i></a>
         </div>
-        <div id="footer-primary-content" class="flex justify-between items-center content-center">
-            <img class="w-[75px] h-[75px]" src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
+        <div id="footer-primary-content">
+            <img src="./images/branding/Brycerw11Logo.png" alt="Bryce Wahl's logo">
             
             <!-- Footer Socials on Desktop: condenses two line footer to one line -->
-            <div id="desktop-footer-socials" class="footer-socials hidden lg:flex flex-row justify-center items-center content-center">
-                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-github text-[3em] hover:text-gray-800 transition-colors duration-300"> </i></a>
-                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-twitter text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
-                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa-brands fa-linkedin text-[3em] hover:text-gray-800 transition-colors duration-300"></i></a>
-                <a href="#" class="block p-[0.75rem] m-[0.25rem] hover:bg-slate-200/9 transition-colors duration-300 rounded-md"> <i class="fa fa-envelope text-[3em] hover:text-gray-800 transition-colors duration-300"></i> </i></a>
+            <div id="desktop-footer-socials" class="footer-socials">
+                <a href="#"> <i class="fa-brands fa-github"> </i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </i></a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"> <i class="fa fa-envelope"></i> </i></a>
             </div>
 
-            <p id="copyright-text" class="text-lg font-bold">© 2025 Bryce Wahl</p>
+            <p id="copyright-text">© 2025 Bryce Wahl</p>
             
             <!-- Create "to top" button, compact for the mobile layout and expanded for the tablet and desktop layouts -->
-            <a id="compact-to-top-button" href="#" class="to-top block sm:hidden flex justify-center items-center content-center bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
-                <div class="size-[3.75rem] flex justify-center items-center content-center">
-                    <i id="to-top-icon" class="fa fa-arrow-up text-[2.5em]"></i>
+            <a id="compact-to-top-button" href="#" class="to-top">
+                <div>
+                    <i id="to-top-icon" class="fa fa-arrow-up"></i>
                 </div>
             </a>
-            <a id="expanded-to-top-button" href="#" class="to-top hidden sm:flex justify-center items-center content-center h-[3.75rem] px-[1em] bg-slate-200 rounded-full hover:bg-slate-400 transition-colors duration-300">
-                <div class="size-[3.75rem] flex justify-center items-center content-center">
-                    <i id="to-top-icon" class="fa fa-arrow-up text-[2.4em]"></i>
+            <a id="expanded-to-top-button" href="#" class="to-top">
+                <div>
+                    <i id="to-top-icon" class="fa fa-arrow-up"></i>
                 </div>
-                <p class="ml-[0] font-bold pr-[1em]">To Top</p>
+                <p>To Top</p>
             </a>
         </div>
 
