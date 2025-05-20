@@ -40,6 +40,7 @@ $(function(){
             image: "https://res.cloudinary.com/dtxrpihy6/image/upload/v1747717132/MoneyMageScreenshot_xzz7p9.png",
             tools: ["C#", ".NET", "Windows Forms", "Visual Studio"],
             github: "https://github.com/Brycerw11/WinFormsFinanceApp",
+            demolink: null
         },
         {
             title: "Java Significant Figure Counter",
@@ -47,6 +48,7 @@ $(function(){
             image: "https://res.cloudinary.com/dtxrpihy6/image/upload/v1747717339/JavaSigFigProgramScreenshot_v38zv1.png",
             tools: ["Java 17", "IntelliJ IDEA",],
             github: "https://github.com/Brycerw11/java_significant_figure_counter",
+            demolink: null
         },
     ]
         
@@ -63,7 +65,7 @@ $(function(){
         }
 
         var projectLinks;
-        if(project.demolink != null || project.demolink != undefined || project.demolink != ""){
+        if(project.demolink != null && project.demolink != undefined && project.demolink != ""){
             projectLinks = `
                 <div id="project-links">
                     <a href="${project.github}"> <i class="fa-brands fa-github"></i>GitHub Repo </a>

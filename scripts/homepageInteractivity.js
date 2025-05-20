@@ -110,21 +110,46 @@ $(document).ready(function(){
     })
 
 
-    //To Top Button's Smooth Scroll
-    function scrollToTop(){
-        //uses an animation to scroll to the top over 700 miliseconds instead of instantly
-        $('html, body').animate({ 
-            scrollTop: 0
-        }, 700);
-    }
+    // Email Form submission stuff
+    $("#send-email-form-button").on("click", function(){
+        let senderName = $("#email-name-input").val().replace(" ", "%20");
+        let senderEmail = $("#email-email-input").val().replace(" ", "%20");
+        let emailSubject = $("#email-subject-input").val().replace(" ", "%20");
+        let emailBody = $("#message-body-input").val().replace(" ", "%20");
 
-    $("#compact-to-top-button").on('click', function( event){   
-        event.preventDefault(); //overrides default scroll to top functionality
-        scrollToTop();
-    })
-    $("#expanded-to-top-button").on('click', function( event){   
-        event.preventDefault(); //overrides default scroll to top functionality
-        scrollToTop();
+        confirm(senderName, senderEmail, emailSubject, emailBody);
+
+        location.href = `mailto:brycewahl07@gmail.com?subject=From%20${senderName}%20at%20${senderEmail}:%20${emailSubject}&body=${emailBody}`;
     })
 
+    // Dictionary to help with writing an email
+    
+    $("#email-inputs button").on('click', ()=>{
+        let word = $("#word-to-search").val()
+
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`).then(response =>{
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        }).then(data =>{
+            $("#dictionary-output").html(`<h4>${data[0].word}</h4> <hr>`);
+
+            for(let meaning of data[0].meanings){                
+                let listOfDefintions = ""
+                let iterations = 0;
+                for(let def of meaning.definitions){
+                    if(iterations >= 5){break;}
+                    iterations++;
+                    
+                    listOfDefintions += `<li>${def.definition}</li>`
+                }
+
+                $("#dictionary-output").append(`<p><span class="bold-text">${meaning.partOfSpeech}:</span> <ol>${listOfDefintions}</ol></p>`)
+            }
+        }).catch(error =>{
+            $("#dictionary-output").html(`<h4>Something went wrong.</h4>`);
+            console.error(error)
+        })
+    })
 })

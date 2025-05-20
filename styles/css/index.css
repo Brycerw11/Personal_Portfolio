@@ -777,4 +777,21 @@ main #contact-me-section #email-me-section form #email-me-buttons button:hover {
 abbr[title=Required] {
   color: red;
   font-weight: 700;
+}
+
+#dictionary-header {
+  margin: 2rem 0 0.5rem 0;
+  text-indent: 3em;
+}
+
+#email-inputs {
+  text-align: center;
+}
+
+#dictionary-output {
+  margin: 0 3.5rem;
+}
+
+.bold-text {
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

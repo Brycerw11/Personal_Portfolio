@@ -35,3 +35,4 @@ All wireframes are made with Lucidchart
 - [Font Awesome v4](https://fontawesome.com/v4)
 - [SASS](https://sass-lang.com/)
 - [jQuery v3.7.1](https://releases.jquery.com/)
+- [Cloudinary](https://cloudinary.com/)

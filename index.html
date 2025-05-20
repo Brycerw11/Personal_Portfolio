@@ -314,11 +314,23 @@
                     </div>
                     <div id="email-me-buttons">
                         <button id="reset-email-form-button" type="reset">Reset</button>
-                        <button id="send-email-form-button" type="submit">Send</button>
+                        <button id="send-email-form-button">Send</button>
                     </div>
                 </form>
             </div>
         </div>
+
+        <div id="dictionary">
+            <h3 id="dictionary-header">Free Dictionary to help write your email (through https://dictionaryapi.dev/)</h3>
+            <div id="email-inputs">
+                <label for="word-to-search">Word:</label>
+                <input type="text" id="word-to-search" name="word-to-search-name">
+                <button>Look Up</button>
+            </div>
+            <p id="dictionary-output">
+
+            </p>
+        </div>  
 
     </main>
 
@@ -363,5 +375,6 @@
 
     <script src="./scripts/homepageInteractivity.js"></script>
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/footer.js"></script>
 </body>
 </html>
