@@ -5,29 +5,7 @@ $(document).ready(function(){
         //Do things needed for mobile version
     }
 
-    //Nav Menu Functionality on mobile
-    var isMobileNavMenuOpen = false;
-    $("#hamburger-menu-icon").click(function (){
-        
-        $("#mobile-nav-menu").slideToggle(1000)
-
-        if(isMobileNavMenuOpen){ //if nav menu already open
-            //swap to being closed
-            $(this).css({
-                'transform':'rotate(0deg)'
-            })
-        }
-        else{
-            //swap to being open
-            $(this).css({
-                'transform':'rotate(90deg)'
-            })
-        }
-
-        isMobileNavMenuOpen = !isMobileNavMenuOpen;
-    })
-
-
+    
     //Miscellaneous Works Section functionality
     var targetProjectIndex = 0;
     const projectNames = ["WinForms Finance App", "Java Significant Figure Counter"] //Array of valid projects, by name, in the "projects" object

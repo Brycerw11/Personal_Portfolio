@@ -6,14 +6,14 @@
     <meta name="author" content="Bryce Wahl">
     <meta name="description" content="I'm a frontend web developer who knows HTML, CSS, JS, jQuery, and Tailwind CSS.">
 
-    <title>Projects - Bryce Wahl</title>
+    <title>About - Bryce Wahl</title>
 
     <!-- Add jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- Link Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../styles/css/projects.css">
+    <link rel="stylesheet" href="../styles/css/about.css">
 </head>
 <body>
     <header>
@@ -26,8 +26,8 @@
             <!-- Nav bar when not on mobile -->
             <div id="regular-nav-bar">
                 <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="projects.html">Projects</a>
                 <a href="../index.html#contact-me-header">Contact Me</a>
                 <a href="https://github.com/Brycerw11">
                     <i class="fa-brands fa-github"></i>
@@ -46,8 +46,8 @@
 
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="../index.html#contact-me-header">Contact Me</a></li>
                 <li>
                     <a href="https://github.com/Brycerw11">
@@ -59,11 +59,37 @@
         </div>
     </header>
 
-    <!-- Start of main content -->
+
     <main>
-        <h1>My Projects</h1>
+
+        <h1>About Me</h1>
+
+        <div id="about-me-intro">
+            <img src="https://res.cloudinary.com/dtxrpihy6/image/upload/f_auto,q_auto/v1/Brycerw11%20Portfolio%20Images/Branding/fcqiivz2wag6se9vlqx7" alt="Image of Bryce Wahl">
+            
+            <p id="main-intro">Hello, I am Bryce Wahl, an aspiring Software Engineer currently in High School. I am currently working on learning web development, but I am willing to learn anything.</p>
+        </div>
+
+        <h2 id="my-skills-header">My Skills</h2>
+        <ul id="skills-list">
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">JS</li>
+            <li class="skill" ref-link="https://www.jquery.com/" title="Click to see website.">jQuery</li>
+            <li class="skill" ref-link="https://tailwindcss.com/" title="Click to see website.">TailwindCSS</li>
+            <li class="skill" ref-link="https://www.python.org/" title="Click to see website.">Python</li>
+            <li class="skill" ref-link="https://sass-lang.com/" title="Click to see website.">SASS</li>
+        </ul>
+
+        <h2 id="education-header">My Education</h2>
+        <ol id="education-list">
+            <li>High School Student in Arizona</li>
+            <li>Coding Student at West-MEC Northeast Campus</li>
+            <li id="future-education"><span class="bold-text">Future:</span> Computer Science student at a 4-year-university</li>
+        </ol>
 
     </main>
+
 
     <footer>
         <!-- Social Media links for non-desktop layouts -->
@@ -99,7 +125,9 @@
                 <p>To Top</p>
             </a>
         </div>
+
     </footer>
     <script src="../scripts/header.js"></script>
+    <script src="../scripts/skills.js"></script>
 </body>
 </html>

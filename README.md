@@ -18,11 +18,7 @@ My personal portfolio website made with HTML, SASS, JS, and jQuery.
 
 ## Roadmap
 
-- About Page
-
-- Projects Page
-
-- Contact Page
+- Add additional projects to projects page
 
 ## Wireframes
 

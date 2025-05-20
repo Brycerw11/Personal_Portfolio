@@ -1,0 +1,17 @@
+@use "./partials/site-defaults";
+@use "./partials/_header.scss";
+@use "./partials/_footer.scss";
+
+// Tailwind breakpoints
+$sm-breakpoint: 40rem;
+$md-breakpoint: 48rem;
+$lg-breakpoint: 64rem;
+$xl-breakpoint: 80rem;
+
+h1{
+    padding-left: 1em;
+
+    @media (min-width: $lg-breakpoint) {
+        font-size: 2.25rem;
+    }
+}

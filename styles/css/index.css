@@ -549,7 +549,7 @@ main #bio-section #personal-image {
 }
 main #bio-section #personal-image img {
   border-radius: 100%;
-  border: 5px solid black;
+  border: 5px solid #0078d7;
   max-height: 300px;
   max-width: 300px;
   width: calc(100% - 10px);
