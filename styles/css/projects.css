@@ -229,11 +229,92 @@ footer #footer-primary-content #expanded-to-top-button i {
   font-size: 2.4em;
 }
 
-h1 {
+main > h1 {
+  margin-top: 1.65rem;
   padding-left: 1em;
 }
 @media (min-width: 64rem) {
-  h1 {
+  main > h1 {
     font-size: 2.25rem;
   }
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#projects-container .project {
+  width: 20rem;
+  height: fit-content;
+  margin: 0.5rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#projects-container .project #project-header {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  width: 100%;
+  background-image: url("../../images/project_images/JavaSigFigProgramScreenshot.png");
+  background-size: cover;
+  border-bottom: 3px solid black;
+}
+#projects-container .project #project-header h3 {
+  padding: 0.35em;
+  border-radius: 10px;
+  margin: 13.5vh 0.25rem 0.25rem 0.25rem;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+#projects-container .project #project-description {
+  margin: 0.55rem 0.75rem;
+  padding: 0;
+  text-indent: 2em;
+}
+#projects-container .project #project-tools {
+  list-style-type: none;
+  margin: 0.5rem 1.5rem 0.75rem 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  user-select: none;
+}
+#projects-container .project #project-tools .tool {
+  min-width: 1.35rem;
+  background-color: #cfcfcf;
+  border-radius: 0.9rem;
+  padding: 0.55rem 0.75rem;
+  text-align: center;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: background-color 0.5s;
+}
+#projects-container .project #project-tools .tool:hover {
+  background-color: #2d8bd8;
+}
+#projects-container .project #project-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+#projects-container .project #project-links a {
+  padding: 0.5em;
+  border-radius: 0.4rem;
+  background-color: #e2e8f0;
+  transition: background-color 0.5s;
+}
+#projects-container .project #project-links a:hover {
+  background-color: #a5a9af;
+}
+#projects-container .project #project-links a i.fa-github {
+  padding-right: 0.3rem;
+}
+#projects-container .project #project-links a i.fa-link {
+  padding-left: 0.3rem;
 }/*# sourceMappingURL=projects.css.map */

@@ -115,7 +115,15 @@ main{
         font-size: 2.25rem;
         text-indent: 1em;
         font-weight: bold;
-        margin: 0.5em 0;
+        margin: 0.5em 0 0.15rem 0;
+    }
+    #project-page-link{
+        text-indent: 3em;
+        margin: 0 0 0.5em 0;
+    }
+    #project-page-link > a{
+        text-decoration: underline;
+        color: #0078d7;
     }
     // The remainder of the projects section is in the _main-projects.scss partial
 
@@ -252,6 +260,7 @@ main{
                         width: 100%;
                         min-height: 50px;
                         border-radius: 6px;
+                        margin-top: 0.2rem;
                     }
                 }
 
@@ -276,4 +285,9 @@ main{
             }
         }
     }
+}
+
+abbr[title="Required"]{
+    color: red;
+    font-weight: 700
 }

@@ -229,21 +229,21 @@ footer #footer-primary-content #expanded-to-top-button i {
   font-size: 2.4em;
 }
 
-h1 {
+main > h1 {
   padding-left: 1em;
 }
 @media (min-width: 64rem) {
-  h1 {
+  main > h1 {
     font-size: 2.25rem;
   }
 }
 
-h2 {
+main > h2 {
   padding-left: 2em;
   font-size: 1.65rem;
 }
 @media (min-width: 64rem) {
-  h2 {
+  main > h2 {
     font-size: 1.75rem;
   }
 }

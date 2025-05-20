@@ -83,6 +83,7 @@
         
         <!-- Start of Projects Section -->
         <h2 id="projects-header">Projects</h2>
+        <h3 id="project-page-link"><a href="./pages/projects.html">See Full Project Page</a></h3>
 
         <div id="projects-container">
 
@@ -93,11 +94,11 @@
                 <div id="project-content">
                     <!-- Project description section for mobile and tablet version; desktop has a description in between the project-content and project-links sections -->
                     <p id="project-description">
-                        My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
+                        My personal portfolio website made with HTML, SASS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
                     </p>
                     <!-- Project Tools section for Mobile and Desktop versions; tablet's tools section is inside the image-container, underneath the images themselves -->
                     <h5 id="project-tools">
-                        Tools: HTML, Tailwind CSS, and JS with jQuery
+                        Tools: HTML, SASS, and JS with jQuery
                     </h5>
                     
                     <div id="project-image-container">
@@ -107,13 +108,13 @@
                         </div>
                         <!-- Project Tools for Tablet version -->
                         <h5 id="project-tools-tablet">
-                            Tools: HTML, Tailwind CSS, and JS with jQuery
+                            Tools: HTML, SASS, and JS with jQuery
                         </h5>
                     </div>
                 </div>
                 <!-- Project description on desktop layout -->
                 <p id="project-description">
-                    My personal portfolio website made with HTML, Tailwind CSS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
+                    My personal portfolio website made with HTML, SASS, JS, and jQuery. This portfolio has a homepage, about page, projects page, and a contact page.
                 </p>
                 
                 <!-- Project's links to GitHub and Demo-->
@@ -295,16 +296,16 @@
                 </div>
                 <form action="#" id="email-form">
                     <div id="name-input-container" class="input-container">
-                        <label for="email-name-input">Your Name:</label>
-                        <input id="email-name-input" type="text" placeholder="e.g. John Smith">
+                        <label for="email-name-input">Your Name: <abbr title="Required">*</abbr> </label>
+                        <input required id="email-name-input" type="text" placeholder="e.g. John Smith">
                     </div>
                     <div id="email-input-container" class="input-container">
-                        <label for="email-email-input">Your Email:</label>
-                        <input id="email-email-input" type="email" placeholder="e.g. john.smith@example.com">
+                        <label for="email-email-input">Your Email: <abbr title="Required">*</abbr> </label>
+                        <input required id="email-email-input" type="email" placeholder="e.g. john.smith@example.com">
                     </div>
                     <div id="subject-input-container" class="input-container">
-                        <label for="email-subject-input">Subject:</label>
-                        <input id="email-subject-input" type="email" placeholder="e.g. Question regarding your 'Portfolio' project" >
+                        <label for="email-subject-input">Subject: <abbr title="Required">*</abbr> </label>
+                        <input required id="email-subject-input" type="text" placeholder="e.g. Question regarding your 'Portfolio' project" >
                     </div>
                     <div id="message-input-container" class="input-container">
                         <label for="message-body-input">Message Body:</label>
