@@ -8,14 +8,6 @@ My personal portfolio website made with HTML, SASS, JS, and jQuery.
 
 - [@Brycerw11](https://github.com/Brycerw11)
 
-
-## Screenshots
-
-![Screenshot of Portfolio on Mobile](https://res.cloudinary.com/dtxrpihy6/image/upload/v1739947562/Brycerw11%20Portfolio%20Images/Screenshots/ajnhhvwx9so02omezp7h.png)
-
-![Screenshot of Portfolio on Mobile](https://res.cloudinary.com/dtxrpihy6/image/upload/v1739947562/Brycerw11%20Portfolio%20Images/Screenshots/viwfzupsqbnymwhziczq.png)
-
-
 ## Roadmap
 
 - Add additional projects to projects page
